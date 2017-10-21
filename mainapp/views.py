@@ -1,15 +1,19 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 
 import os
 import logging
 import httplib2
 
+import quickstart
+
 from googleapiclient.discovery import build
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseRedirect
-from django_sample.plus.models import CredentialsModel
-from django_sample import settings
+from django.http import HttpResponse
+from mainapp.models import CredentialsModel
+from django.conf import settings
 from oauth2client.contrib import xsrfutil
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.contrib.django_util.storage import DjangoORMStorage
@@ -25,3 +29,11 @@ def index(request):
 
 def register(request):
 	return render(request, 'register.html')	
+
+def share(request):
+	return render(request, 'test.html')
+
+def login(request):
+	quickstart.main()
+	return redirect('/index/')
+
