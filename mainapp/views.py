@@ -25,15 +25,18 @@ FLOW = flow_from_clientsecrets(
     redirect_uri='http://localhost:8000')
 
 def index(request):
-	return render(request, 'index.html')
+    return render(request, 'index.html')
 
 def register(request):
-	return render(request, 'register.html')	
+    return render(request, 'register.html') 
 
 def share(request):
-	return render(request, 'test.html')
+    return render(request, 'test.html')
+
+def courselist(request):
+    return render(request, 'category-full.html')
 
 def login(request):
-	quickstart.main()
-	return redirect('/index/')
+    quickstart.main()
+    return redirect('/share/')
 

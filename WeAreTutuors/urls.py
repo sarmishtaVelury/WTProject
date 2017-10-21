@@ -20,9 +20,11 @@ from django.conf import settings
 from mainapp import views
 
 urlpatterns = [
+	url(r'^$', views.index),
     url(r'^index/$', views.index),
 	url(r'^register/$', views.register),
     url(r'^admin/', admin.site.urls),
     url(r'^login/$',views.login),
-     url(r'^share/$',views.share),
+    url(r'^share/$',views.share),
+    url(r'^courselist/$',views.courselist),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

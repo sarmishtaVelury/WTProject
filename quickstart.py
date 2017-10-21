@@ -15,7 +15,7 @@ except ImportError:
 
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/classroom.googleapis.com-python-quickstart.json
-SCOPES = 'https://www.googleapis.com/auth/classroom.courses.readonly'
+SCOPES = ['https://www.googleapis.com/auth/classroom.courses', 'https://www.googleapis.com/auth/classroom.rosters', 'https://www.googleapis.com/auth/classroom.coursework.me', 'https://www.googleapis.com/auth/classroom.coursework.students', 'https://www.googleapis.com/auth/classroom.announcements', 'https://www.googleapis.com/auth/classroom.profile.emails']
 CLIENT_SECRET_FILE = 'clientID.json'
 APPLICATION_NAME = 'Classroom API Python Quickstart'
 
