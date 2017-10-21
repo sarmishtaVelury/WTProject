@@ -1,0 +1,11 @@
+{% if courses %}
+        <!--<p>Found {{ travel|length }} name{{ travel|pluralize }}.</p> -->
+        <ul>
+            {% for course in courses %}
+            <li class="new">{{ course.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No names matched your search criteria.</p>
+
+{% endif %}

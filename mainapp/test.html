@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Demo: Explicit load of a Classroom share button</title>
+    <link href="http://www.example.com" />
+    <script>
+      window.___gcfg = {
+        parsetags: 'explicit'
+      };
+    </script>
+    <script src="https://apis.google.com/js/platform.js">
+    </script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="g-sharetoclassroom" data-size="32" data-url="..." ></div>
+    </div>
+    <script>
+      gapi.sharetoclassroom.go("content");
+    </script>
+  </body>
+</html>
