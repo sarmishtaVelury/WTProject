@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
+from .models import Course
 
 import os
 import logging
@@ -37,6 +38,18 @@ def courselist(request):
     return render(request, 'category-full.html')
 
 def login(request):
-    quickstart.main()
-    return redirect('/share/')
+    courses = quickstart.main()
+
+    for course in courses:
+        print(course)
+        coursename = course['name']
+        courseid = course['id']
+        try:
+            old_course = Course.objects.get(course_id = courseid)
+        except:
+            new_course = Course.objects.create(course_name = coursename, course_id = courseid)
+
+    courselist = Course.objects.all()
+    print(len(courselist))
+    return render(request, 'category-full.html',{'courselist':courselist})
 

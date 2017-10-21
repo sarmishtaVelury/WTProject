@@ -1,8 +1,8 @@
-{% if courses %}
+{% if courselist %}
         <!--<p>Found {{ travel|length }} name{{ travel|pluralize }}.</p> -->
         <ul>
-            {% for course in courses %}
-            <li class="new">{{ course.name }}</li>
+            {% for course in courselist %}
+            <li class="new"><p>{{ course.course_name }}<p></li>
             {% endfor %}
         </ul>
     {% else %}

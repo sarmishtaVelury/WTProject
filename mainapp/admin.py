@@ -1,5 +1,7 @@
 from django.contrib import admin
-from . import models
+from .models import CredentialsModel
+from .models import Course
 
 # Register your models here.
-admmin.site.register(CredentialsModel)
+admin.site.register(CredentialsModel)
+admin.site.register(Course)
