@@ -66,9 +66,8 @@
                     <div class="box info-bar">
                         <div class="row">
                             <div class="col-sm-12 col-md-4 products-showing">
-                                Showing <strong>12</strong> of <strong>25</strong> courses
+                                <a href = '/courseform/'><button class = "btn btn-primary btn-lg btn-primary"><strong>Create Course</strong></button></a>
                             </div>
-
                             <div class="col-sm-12 col-md-8  products-number-sort">
                                 <div class="row">
                                     <form class="form-inline">
@@ -96,25 +95,8 @@
                     <div class="row products">
 
                         {% for course in courselist %}
-                        <div class="col-md-3 col-sm-4">
+                        <div class="col-md-12 col-sm-12">
                             <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="{%static 'img/product1.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="{%static 'img/product1_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="{%static 'img/product1.jpg' %}" alt="" class="img-responsive">
-                                </a>
                                 <div class="text">
                                     <h3><a href="detail.html">{{ course.course_name }}</a></h3>
                                     <p class="price">$143.00</p>
