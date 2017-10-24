@@ -7,3 +7,6 @@ class CourseForm(forms.Form):
     description = forms.CharField()
     ownerID = forms.CharField()
 
+class EnrolForm(forms.Form):
+	courseid = forms.CharField()
+	enrolmentcode = forms.CharField()
