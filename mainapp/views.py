@@ -11,11 +11,7 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from .models import Course
 
-import os
 import logging
-import httplib2
-
-import quickstart
 
 from googleapiclient.discovery import build
 from django.contrib.auth.decorators import login_required
@@ -37,6 +33,7 @@ except ImportError:
     flags = None
 
 credentials = []
+
 
 # Create your views here.
 def index(request):
@@ -134,8 +131,10 @@ def login(request):
 # at ~/.credentials/classroom.googleapis.com-python-quickstart.json
 SCOPES = ['https://www.googleapis.com/auth/classroom.courses', 'https://www.googleapis.com/auth/classroom.rosters', 'https://www.googleapis.com/auth/classroom.coursework.me', 'https://www.googleapis.com/auth/classroom.coursework.students', 'https://www.googleapis.com/auth/classroom.announcements', 'https://www.googleapis.com/auth/classroom.profile.emails']
 CLIENT_SECRET_FILE = 'clientID.json'
-APPLICATION_NAME = 'Classroom API Python Quickstart'
+APPLICATION_NAME = 'WeAreTutors'
 
+def logout(request):
+    return redirect('/')
 
 def get_credentials():
     """Gets valid user credentials from storage.
@@ -150,8 +149,7 @@ def get_credentials():
     credential_dir = os.path.join(home_dir, '.credentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
-    credential_path = os.path.join(credential_dir,
-                                   'classroom.googleapis.com-python-quickstart.json')
+    credential_path = os.path.join(credential_dir, 'clientID.json')
 
     store = Storage(credential_path)
     credentials = store.get()
