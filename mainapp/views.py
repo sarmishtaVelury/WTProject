@@ -129,6 +129,8 @@ SCOPES = ['https://www.googleapis.com/auth/classroom.courses', 'https://www.goog
 CLIENT_SECRET_FILE = 'clientID.json'
 APPLICATION_NAME = 'WeAreTutors'
 
+def logout(request):
+    return redirect('/')
 
 def get_credentials():
     """Gets valid user credentials from storage.

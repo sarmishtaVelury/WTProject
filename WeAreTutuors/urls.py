@@ -25,7 +25,9 @@ urlpatterns = [
 	url(r'^courseform/$', views.courseform),
     url(r'^admin/', admin.site.urls),
     url(r'^login/$',views.login),
+    url(r'^logout/$', views.logout),
     url(r'^share/$',views.share),
     url(r'^courselist/$',views.courselist),
     url(r'^enroll/$', views.studentenroll),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
