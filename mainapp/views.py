@@ -49,17 +49,24 @@ def courseform(request):
         form = CourseForm(request.POST or None)
         if form.is_valid():
             cd = form.cleaned_data
-            cd['courseState'] = "ACTIVE"
-            cd['ownerID'] = 'me'
+            course = {
+                'name': cd['name'],
+                'section': 'Period 0',
+                'descriptionHeading': cd['descriptionHeading'],
+                'description': cd['description'],
+                'room': '0',
+                'ownerId': 'me',
+                'courseState': 'ACTIVE'
+            }
             http = credentials.authorize(httplib2.Http())
             service = discovery.build('classroom', 'v1', http=http)
-            course = service.courses().create(body=cd).execute()
+            course = service.courses().create(body=course).execute()
             return courselist(request,credentials)
                 #Course.objects.create(lender=cd['lender'],product_name=cd['product_name'],product_description=cd['product_description'])
 
     else:
         form = CourseForm()
-        return render(request, 'testcourseform.html', {'form':form}) 
+        return render(request, 'register.html', {'form':form}) 
 
 def share(request):
     return render(request, 'test.html')
