@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^share/$',views.share),
     url(r'^courselist/$',views.courselist),
     url(r'^enroll/$', views.studentenroll),
+    url(r'^details/(?P<course_id>[0-9]+)/$', views.details, name='details')
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

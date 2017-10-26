@@ -68,6 +68,10 @@ def courseform(request):
         form = CourseForm()
         return render(request, 'register.html', {'form':form}) 
 
+def details(request, course_id):
+    course = Course.objects.get(course_id = course_id)
+    return render(request, 'detail.html', {'course':course})
+
 def share(request):
     return render(request, 'test.html')
 

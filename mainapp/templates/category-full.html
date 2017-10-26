@@ -37,6 +37,14 @@
 
     <link rel="shortcut icon" href="favicon.png">
 
+    <style type="text/css">
+        
+        .price{
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+    </style>
 
 
 </head>
@@ -53,9 +61,9 @@
                 <div class="col-md-12">
 
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="/index/">Home</a>
                         </li>
-                        <li>Ladies</li>
+                        <li>Dashboard</li>
                     </ul>
 
                     <div class="box">
@@ -79,7 +87,7 @@
                                         <div class="col-md-6 col-sm-6">
                                             <div class="products-sort-by">
                                                 <strong>Sort by</strong>
-                                                <select name="sort-by" class="form-control">
+                                                <select name="sort-by" class="form-cohttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingnhttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingtrhttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingol">
                                                     <option>Price</option>
                                                     <option>Name</option>
                                                     <option>Sales first</option>
@@ -98,11 +106,10 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="product">
                                 <div class="text">
-                                    <h3><a href="detail.html">{{ course.course_name }}</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="/details/{{course.course_id}}/">{{ course.course_name }}</h3>
+                                    <p class="price" style="font-size: 20px;font-weight: bold;">{{ course.course_id }}</p>
                                     <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        View details
                                     </p>
                                 </div>
                                 <!-- /.text -->

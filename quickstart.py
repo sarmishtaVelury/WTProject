@@ -46,6 +46,7 @@ def get_credentials():
         else: # Needed only for compatibility with Python 2.6
             credentials = tools.run(flow, store)
         print('Storing credentials to ' + credential_path)
+    print(credentials)
     return credentials
 
 def main():
