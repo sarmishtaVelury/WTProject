@@ -27,7 +27,7 @@ from django.conf import settings
 from oauth2client.contrib import xsrfutil
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.contrib.django_util.storage import DjangoORMStorage
-from WeAreTutuors.forms import CourseForm
+from WeAreTutuors.forms import CourseForm, EnrolForm
 
 
 try:
@@ -88,6 +88,37 @@ def courselist(request, credentials):
     return render(request, 'category-full.html',{'courselist':courselist})
 
     return render(request, 'category-full.html', {'courselist':courselist})
+
+def studentenroll(request):
+    if(request.method == 'POST'):
+        credentials = get_credentials()
+
+        form = EnrolForm(request.POST or None)
+        if form.is_valid():
+            cd = form.cleaned_data
+            course_id = cd['courseid']#provided by teacher to student in person, we will get it from forms
+            enrollment_code = cd['enrolmentcode']#provided by teacher to student in person, we will get it from forms
+        
+            student = {
+            'userId': 'me'
+            }
+            
+            try:
+                http = credentials.authorize(httplib2.Http())
+                service = discovery.build('classroom', 'v1', http=http)
+                student = service.courses().students().create(
+                courseId=course_id,
+                enrollmentCode=enrollment_code,
+                body=student).execute()
+            except errors.HttpError as e:
+                error = simplejson.loads(e.content).get('error')
+                if(error.get('code') == 409):
+                    print ('You are already a member of this course.')
+                else:
+                    raise
+    else:
+        form = EnrolForm()
+        return render(request, 'teststudentenrol.html', {'form':form})
 
 def login(request):
 

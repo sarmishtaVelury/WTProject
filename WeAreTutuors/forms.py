@@ -6,3 +6,6 @@ class CourseForm(forms.Form):
     descriptionHeading = forms.CharField(label = 'Course Description Heading')
     description = forms.CharField(label = 'Course Description')
 
+class EnrolForm(forms.Form):
+	courseid = forms.CharField()
+	enrolmentcode = forms.CharField()
