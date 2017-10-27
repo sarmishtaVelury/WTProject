@@ -102,8 +102,7 @@
     <div class="navbar navbar-default yamm" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
-
-                <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
+                <a class="navbar-brand home" href="index" data-animate-hover="bounce">
                     <img src="{% static 'img/logo.png' %}" alt="Obaju logo" class="hidden-xs">
                     <img src="{% static 'img/logo-small.png' %}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
@@ -116,9 +115,10 @@
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
                     </button>
+                    <!--
                     <a class="btn btn-default navbar-toggle" href="basket.html">
                         <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <!--/.navbar-header -->
@@ -363,10 +363,10 @@
             <!--/.nav-collapse -->
 
             <div class="navbar-buttons">
-
+                <!--
                 <div class="navbar-collapse collapse right" id="basket-overview">
                     <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
-                </div>
+                </div> -->
                 <!--/.nav-collapse -->
 
                 <div class="navbar-collapse collapse right" id="search-not-mobile">
@@ -400,7 +400,7 @@
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
-
+ 
 
 
     <div id="all">
@@ -411,16 +411,16 @@
                 <div class="col-md-12">
                     <div id="main-slider">
                         <div class="item">
-                            <img src="{% static 'img/main-slider1.jpg' %}" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="{% static 'img/main-slider2.jpg' %}" alt="">
+                            <img src="{% static 'img/main-slider2.jpg' %}" alt="" class="img-responsive">
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="{% static 'img/main-slider3.jpg' %}" alt="">
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="{% static 'img/main-slider4.jpg' %}" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="{% static 'img/main-slider1.jpg' %}" alt="">
                         </div>
                     </div>
                     <!-- /#main-slider -->
