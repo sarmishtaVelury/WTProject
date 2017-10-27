@@ -41,7 +41,28 @@
 </head>
 
 <body>
-{% include 'topbar.html' %}
+<!--
+{% include 'topbar.html' %} -->
+<div id="top">
+        <div class="container">
+            <div class="col-md-12" data-animate="fadeInDown">
+                <ul class="menu">
+                    <li>
+                        <a href="/logout/" onclick="signOut();">
+                        <script type="text/javascript">
+                            function signOut() {
+                                var auth2 = gapi.auth2.getAuthInstance();
+                                auth2.signOut().then(function () {
+                                console.log('User signed out.');
+                            });
+                                    }
+                        </script>
+                        <button class = "btn-lg btn-primary navbar-btn">Sign Out</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- *** TOP BAR END *** -->
 
@@ -60,13 +81,13 @@
 
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="box">
                         <h1>New Course</h1>
 
                         <p class="lead">Create a new course</p>
-                        <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-                        <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+                        <p>With registration with us new world of computing, fantastic courses and much more opens to you! The whole process will not take you more than a minute!</p>
+                        <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us.</a></p>
 
                         <hr>
 
@@ -106,9 +127,9 @@
                         </div> 
                     </div>
                 </div>
-
+                <!--
                 <div class="col-md-6">
-                    <div class="box">
+                    <div class="box"> 
                         <h1>Login</h1>
 
                         <p class="lead">Already our customer?</p>
@@ -134,13 +155,13 @@
                 </div>
 
 
-            </div>
+            </div> -->
             <!-- /.container -->
         </div>
         <!-- /#content -->
 
 
-        <!-- *** FOOTER ***
+         <!-- *** FOOTER ***
  _________________________________________________________ -->
         <div id="footer" data-animate="fadeInUp">
             <div class="container">
@@ -211,13 +232,13 @@
 
                         <h4>Where to find us</h4>
 
-                        <p><strong>Obaju Ltd.</strong>
-                            <br>13/25 New Avenue
-                            <br>New Heaven
-                            <br>45Y 73J
-                            <br>England
+                        <p><strong>WeAreTutors Ltd.</strong>
+                            <br>DJ Sanghvi College of Engineering
+                            <br>Vile Parle
+                            <br>Mumbai
+                            <br>400058
                             <br>
-                            <strong>Great Britain</strong>
+                            <strong></strong>
                         </p>
 
                         <a href="contact.html">Go to contact page</a>
@@ -231,9 +252,9 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Get the news</h4>
+                        <h4>Subscribe</h4>
 
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="text-muted">Get our latest news</p>
 
                         <form>
                             <div class="input-group">
@@ -242,9 +263,9 @@
 
                                 <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+                <button class="btn btn-default" type="button">Go!</button>
 
-			</span>
+            </span>
 
                             </div>
                             <!-- /input-group -->
@@ -284,13 +305,11 @@
         <div id="copyright">
             <div class="container">
                 <div class="col-md-6">
-                    <p class="pull-left">© 2015 Your name goes here.</p>
+                    <p class="pull-left">© 2017 WeAreTutors.</p>
 
                 </div>
                 <div class="col-md-6">
-                    <p class="pull-right">Template by <a href="https://bootstrapious.com/e-commerce-templates">Bootstrapious</a> & <a href="https://fity.cz">Fity</a>
-                         <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
-                    </p>
+                
                 </div>
             </div>
         </div>
