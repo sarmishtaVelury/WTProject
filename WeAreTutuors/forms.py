@@ -9,3 +9,10 @@ class CourseForm(forms.Form):
 class EnrolForm(forms.Form):
 	courseid = forms.CharField()
 	enrolmentcode = forms.CharField()
+
+class ContactForm(forms.Form):
+	firstname = forms.CharField()
+	lastname = forms.CharField()
+	email = forms.CharField()
+	subject = forms.CharField()
+	message = forms.CharField()

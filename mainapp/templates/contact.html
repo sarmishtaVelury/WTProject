@@ -504,42 +504,20 @@
                         <hr>
                         <h2>Contact form</h2>
 
-                        <form>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="firstname">Firstname</label>
-                                        <input type="text" class="form-control" id="firstname">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="lastname">Lastname</label>
-                                        <input type="text" class="form-control" id="lastname">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="text" class="form-control" id="subject">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea id="message" class="form-control"></textarea>
-                                    </div>
-                                </div>
+                        <div class="content">
+                        {% if form.errors %}
+                                <p style="color: red;">
+                                Please correct the error{{ form.errors|pluralize }} below.
+                                </p>
+                            {% endif %}
 
-                                <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send message</button>
-
+                        <form action="" method="post" enctype="multipart/form-data">
+                               <div class = "form-group">
+                                    {{ form.as_table }}
+                                    {% csrf_token %}
+                                </div>
+                                <div class = "text-center">
+                                    <button class = "btn btn-primary" type="submit" value="Submit">Submit</button>
                                 </div>
                             </div>
                             <!-- /.row -->

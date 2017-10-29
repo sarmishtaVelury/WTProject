@@ -12,11 +12,19 @@ class CredentialsModel(models.Model):
 class CredentialsAdmin(admin.ModelAdmin):
     pass
 
+class ContactModel(models.Model):
+	firstname = models.CharField(max_length=100)
+	lastname = models.CharField(max_length=100)
+	email = models.CharField(max_length=100)
+	subject = models.CharField(max_length=100)
+	message = models.CharField(max_length=1000)
+
 class Course(models.Model):
     course_name = models.CharField(max_length=100)
-    course_domain = models.CharField(max_length=100)
+    course_domain = models.CharField(max_length=100, default=True)
     course_id = models.IntegerField()
     course_description = models.CharField(max_length=1000000)
 
     def __str__(self):
         return self.course_name
+
