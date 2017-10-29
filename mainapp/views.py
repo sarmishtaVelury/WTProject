@@ -204,7 +204,7 @@ def get_courses(credentials):
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('classroom', 'v1', http=http)
 
-    results = service.courses().list(pageSize=10).execute()
+    results = service.courses().list(pageSize=1000).execute()
     courses = results.get('courses', [])
 
     if not courses:
@@ -241,18 +241,13 @@ def database_population(request):
         csvreader = csv.reader(csvfile)
         for row in csvreader:
             course_id = row[0]
-            course_name = row[1]
-            course_description = row[2]
-
-            try:
-                old_course = Course.objects.get(course_id = course_id)
-            except:
-                new_course = Course.objects.create(course_name = course_name, course_id = course_id, course_description = course_description)
+            course_domain = row[1]
+            course_name = row[2]
+            course_description = row[3]
 
             course = {
                 'name': course_name,
-                'section': 'Period 0',
-                'descriptionHeading': 'none',
+                'descriptionHeading': course_domain,
                 'description': course_description,
                 'room': '0',
                 'ownerId': 'me',
@@ -261,5 +256,6 @@ def database_population(request):
             http = credentials.authorize(httplib2.Http())
             service = discovery.build('classroom', 'v1', http=http)
             course = service.courses().create(body=course).execute()
-            return courselist(request,credentials)
+        
+    return courselist(request,credentials)
 #def create_course(credentials):
