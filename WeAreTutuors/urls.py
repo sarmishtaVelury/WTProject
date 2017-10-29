@@ -27,9 +27,11 @@ urlpatterns = [
     url(r'^login/$',views.login),
     url(r'^logout/$', views.logout),
     url(r'^share/$',views.share),
+    url(r'^contact/$',views.contact),
     url(r'^courselist/$',views.courselist),
     url(r'^database/$', views.database_population),
     url(r'^enroll/(?P<course_id>[\w{}.-]{1,40})/$', views.studentenroll, name = 'enroll'),
     url(r'^details/(?P<course_id>[0-9]+)/$', views.details, name='details')
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+ 

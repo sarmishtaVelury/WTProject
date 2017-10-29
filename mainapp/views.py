@@ -139,6 +139,9 @@ APPLICATION_NAME = 'WeAreTutors'
 def logout(request):
     return redirect('/')
 
+def contact(request):
+    return render(request, 'contact.html')
+
 def get_credentials():
     """Gets valid user credentials from storage.
 

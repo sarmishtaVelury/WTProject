@@ -21,21 +21,21 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
 
     <!-- styles -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.css' %} " rel="stylesheet">
 
     <!-- theme stylesheet -->
-    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+    <link href="{% static 'css/style.default.css' %}" rel="stylesheet" id="theme-stylesheet">
 
     <!-- your stylesheet with modifications -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
 
-    <script src="js/respond.min.js"></script>
+    <script src="{% static 'js/respond.min.js' %}"></script>
 
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}' %}">
 
 
 
@@ -44,7 +44,8 @@
 <body>
     <!-- *** TOPBAR ***
  _________________________________________________________ -->
-    <div id="top">
+   <!--  <div id="top">
+       
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
                 <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
@@ -61,7 +62,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> 
         <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
             <div class="modal-dialog modal-sm">
 
@@ -91,9 +92,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
-    </div>
+    </div> -->
 
     <!-- *** TOP BAR END *** -->
 
@@ -104,9 +105,9 @@
         <div class="container">
             <div class="navbar-header">
 
-                <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
-                    <img src="img/logo.png" alt="Obaju logo" class="hidden-xs">
-                    <img src="img/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                <a class="navbar-brand home" href="/" data-animate-hover="bounce">
+                    <img src="{% static 'img/logo.png' %}" alt="Obaju logo" class="hidden-xs">
+                    <img src="{% static 'img/logo-small.png' %}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -116,10 +117,10 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
-                    </button>
+                    </button><!--
                     <a class="btn btn-default navbar-toggle" href="basket.html">
                         <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <!--/.navbar-header -->
@@ -127,8 +128,8 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="index.html">Home</a>
-                    </li>
+                    <li class="active"><a href="/">Home</a>
+                    </li><!--
                     <li class="dropdown yamm-fw">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Men <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -200,7 +201,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.yamm-content -->
+                                <!/.yamm-content 
                             </li>
                         </ul>
                     </li>
@@ -266,18 +267,18 @@
                                         <div class="col-sm-3">
                                             <div class="banner">
                                                 <a href="#">
-                                                    <img src="img/banner.jpg" class="img img-responsive" alt="">
+                                                    <img src="{% static 'img/banner.jpg" class="img img-responsive" alt="">
                                                 </a>
                                             </div>
                                             <div class="banner">
                                                 <a href="#">
-                                                    <img src="img/banner2.jpg" class="img img-responsive" alt="">
+                                                    <img src="{% static 'img/banner2.jpg" class="img img-responsive" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.yamm-content -->
+                                <!/.yamm-content 
                             </li>
                         </ul>
                     </li>
@@ -348,33 +349,33 @@
                                                 </li>
                                                 <li><a href="404.html">404 page</a>
                                                 </li>
-                                                <li><a href="contact.html">Contact</a>
+                                                <li><a href="/contact/">Contact</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.yamm-content -->
-                            </li>
+                                <!/.yamm-content 
+                            </li> -->
                         </ul>
                     </li>
-                </ul>
+                </ul> 
 
             </div>
             <!--/.nav-collapse -->
 
             <div class="navbar-buttons">
 
-                <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                <div class="navbar-collapse collapse right" id="basket-overview"><!--
+                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a> -->
                 </div>
                 <!--/.nav-collapse -->
 
-                <div class="navbar-collapse collapse right" id="search-not-mobile">
+                <div class="navbar-collapse collapse right" id="search-not-mobile"><!--
                     <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
-                    </button>
+                    </button> -->
                 </div>
 
             </div>
@@ -409,7 +410,7 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="/">Home</a>
                         </li>
                         <li>Contact</li>
                     </ul>
@@ -419,6 +420,7 @@
                 <div class="col-md-3">
                     <!-- *** PAGES MENU ***
  _________________________________________________________ -->
+                    <!--
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
@@ -440,25 +442,24 @@
                             </ul>
 
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- *** PAGES MENU END *** -->
 
-
+                    
                     <div class="banner">
                         <a href="#">
-                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
+                            <img src="{% static 'img/banner.jpg" alt="" class="img-responsive">
                         </a>
                     </div>
-                </div>
+                </div> 
 
-                <div class="col-md-9">
-
+                <div class="col-md-12">
 
                     <div class="box" id="contact">
                         <h1>Contact</h1>
 
-                        <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
+                        <p class="lead">Are you curious about something? Do you have some kind of problem?</p>
                         <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
 
                         <hr>
@@ -466,19 +467,19 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-map-marker"></i> Address</h3>
-                                <p>13/25 New Avenue
-                                    <br>New Heaven
-                                    <br>45Y 73J
-                                    <br>England
+                                <p>D.J. Sanghvi College of Engineering
+                                    <br>Vile Parle
+                                    <br>Mumbai
+                                    <br>400058
                                     <br>
-                                    <strong>Great Britain</strong>
+                                    <strong>India</strong>
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-phone"></i> Call center</h3>
-                                <p class="text-muted">This number is toll free if calling from Great Britain otherwise we advise you to use the electronic form of communication.</p>
-                                <p><strong>+33 555 444 333</strong>
+                                <p class="text-muted">This number is toll free if calling from India otherwise we advise you to use the electronic form of communication.</p>
+                                <p><strong>+91 9769824455</strong>
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
@@ -486,9 +487,8 @@
                                 <h3><i class="fa fa-envelope"></i> Electronic support</h3>
                                 <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
                                 <ul>
-                                    <li><strong><a href="mailto:">info@fakeemail.com</a></strong>
+                                    <li><strong><a href="mailto:">wearetutors01@gmail.com</a></strong>
                                     </li>
-                                    <li><strong><a href="#">Ticketio</a></strong> - our ticketing support platform</li>
                                 </ul>
                             </div>
                             <!-- /.col-sm-4 -->
@@ -572,21 +572,13 @@
                             </li>
                             <li><a href="faq.html">FAQ</a>
                             </li>
-                            <li><a href="contact.html">Contact us</a>
+                            <li><a href="/contact/">Contact us</a>
                             </li>
                         </ul>
 
                         <hr>
 
-                        <h4>User section</h4>
-
-                        <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                            </li>
-                            <li><a href="register.html">Regiter</a>
-                            </li>
-                        </ul>
-
+                       
                         <hr class="hidden-md hidden-lg hidden-sm">
 
                     </div>
@@ -594,32 +586,14 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Top categories</h4>
-
-                        <h5>Men</h5>
+                     <h4>User section</h4>
 
                         <ul>
-                            <li><a href="category.html">T-shirts</a>
+                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
                             </li>
-                            <li><a href="category.html">Shirts</a>
-                            </li>
-                            <li><a href="category.html">Accessories</a>
+                            <li><a href="register.html">Register</a>
                             </li>
                         </ul>
-
-                        <h5>Ladies</h5>
-                        <ul>
-                            <li><a href="category.html">T-shirts</a>
-                            </li>
-                            <li><a href="category.html">Skirts</a>
-                            </li>
-                            <li><a href="category.html">Pants</a>
-                            </li>
-                            <li><a href="category.html">Accessories</a>
-                            </li>
-                        </ul>
-
-                        <hr class="hidden-md hidden-lg">
 
                     </div>
                     <!-- /.col-md-3 -->
@@ -628,16 +602,16 @@
 
                         <h4>Where to find us</h4>
 
-                        <p><strong>Obaju Ltd.</strong>
-                            <br>13/25 New Avenue
-                            <br>New Heaven
-                            <br>45Y 73J
-                            <br>England
+                        <p><strong>WeAreTutors Ltd.</strong>
+                            <br>DJ Sanghvi College of Engineering
+                            <br>Vile Parle
+                            <br>Mumbai
+                            <br>400058
                             <br>
-                            <strong>Great Britain</strong>
+                            <strong></strong>
                         </p>
 
-                        <a href="contact.html">Go to contact page</a>
+                        <a href="/contact/"><h3>Contact Us!</h3></a>
 
                         <hr class="hidden-md hidden-lg">
 
@@ -648,9 +622,9 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Get the news</h4>
+                        <h4>Subscribe</h4>
 
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="text-muted">Get our latest news</p>
 
                         <form>
                             <div class="input-group">
@@ -659,9 +633,9 @@
 
                                 <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+                <button class="btn btn-default" type="button">Go!</button>
 
-			</span>
+            </span>
 
                             </div>
                             <!-- /input-group -->
@@ -701,13 +675,11 @@
         <div id="copyright">
             <div class="container">
                 <div class="col-md-6">
-                    <p class="pull-left">© 2015 Your name goes here.</p>
+                    <p class="pull-left">© 2017 WeAreTutors.</p>
 
                 </div>
                 <div class="col-md-6">
-                    <p class="pull-right">Template by <a href="https://bootstrapious.com/e-commerce-templates">Bootstrapious</a> & <a href="https://fity.cz">Fity</a>
-                         <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
-                    </p>
+                
                 </div>
             </div>
         </div>
@@ -740,8 +712,8 @@
     <script>
         function initialize() {
             var mapOptions = {
-                zoom: 15,
-                center: new google.maps.LatLng(49.1678136, 16.5671893),
+                zoom: 18,
+                center: new google.maps.LatLng(19.107111, 72.837011),
                 mapTypeId: google.maps.MapTypeId.ROAD,
                 scrollwheel: false
             }
