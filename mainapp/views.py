@@ -25,7 +25,7 @@ from django.conf import settings
 from oauth2client.contrib import xsrfutil
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.contrib.django_util.storage import DjangoORMStorage
-from WeAreTutuors.forms import CourseForm, EnrolForm
+from WeAreTutuors.forms import CourseForm, EnrolForm, ContactForm
 
 
 try:
@@ -139,7 +139,14 @@ def logout(request):
     return redirect('/')
 
 def contact(request):
-    return render(request, 'contact.html')
+    if request.method == 'POST':
+        dta = ContactForm(request.POST or None)
+        if form.is_valid():
+            cd = dta.cleaned_data
+            ContactModel.objects.create(lender=cd['lender'],product_name=cd['product_name'],product_description=cd['product_description'])
+            return render(request, 'index.html')
+    else:
+        return render(request, 'contact.html', {'form':ContactForm})
 
 def get_credentials():
     """Gets valid user credentials from storage.
