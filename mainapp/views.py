@@ -14,6 +14,7 @@ from .models import Course
 import logging
 
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseRedirect
@@ -79,10 +80,11 @@ def courselist(request, credentials):
         print(course)
         coursename = course['name']
         courseid = course['id']
+        coursedescription = course['descriptionHeading']
         try:
             old_course = Course.objects.get(course_id = courseid)
         except:
-            new_course = Course.objects.create(course_name = coursename, course_id = courseid)
+            new_course = Course.objects.create(course_name = coursename, course_id = courseid, course_description = coursedescription)
 
     courselist = Course.objects.all()
     print(len(courselist))
@@ -90,36 +92,31 @@ def courselist(request, credentials):
 
     return render(request, 'category-full.html', {'courselist':courselist})
 
-def studentenroll(request):
-    if(request.method == 'POST'):
-        credentials = get_credentials()
-
-        form = EnrolForm(request.POST or None)
-        if form.is_valid():
-            cd = form.cleaned_data
-            course_id = cd['courseid']#provided by teacher to student in person, we will get it from forms
-            enrollment_code = cd['enrolmentcode']#provided by teacher to student in person, we will get it from forms
-        
-            student = {
-            'userId': 'me'
-            }
+def studentenroll(request, course_id):
+    credentials = get_credentials()
+    if(request.method == 'GET'):
+        # try:
+        http = credentials.authorize(httplib2.Http())
+        service = discovery.build('classroom', 'v1', http=http)#provided by teacher to student in person, we will get it from forms
+        body = {"courseId": course_id,"role": "STUDENT","userId": "me"}
             
-            try:
-                http = credentials.authorize(httplib2.Http())
-                service = discovery.build('classroom', 'v1', http=http)
-                student = service.courses().students().create(
-                courseId=course_id,
-                enrollmentCode=enrollment_code,
-                body=student).execute()
-            except errors.HttpError as e:
-                error = simplejson.loads(e.content).get('error')
-                if(error.get('code') == 409):
-                    print ('You are already a member of this course.')
-                else:
-                    raise
-    else:
-        form = EnrolForm()
-        return render(request, 'teststudentenrol.html', {'form':form})
+            # try:
+        student = service.invitations.create(body=body).execute()
+
+        return courselist(request,credentials)
+        #     except errors.HttpError as e:
+        #         error = simplejson.loads(e.content).get('error')
+        #         if(error.get('code') == 409):
+        #             print ('You are already a member of this course.')
+        #         else:
+        #             raise
+
+        # except errors.HttpError as e:
+        #     error = simplejson.loads(e.content).get('error')
+        #     if(error.get('code') == 404):
+        #         print("course not found")
+        #     else:
+        #         raise
 
 def login(request):
 
