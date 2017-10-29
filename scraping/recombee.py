@@ -2,7 +2,7 @@ from recombee_api_client.api_client import RecombeeClient
 from recombee_api_client.api_requests import *
 import csv
 
-client = RecombeeClient('wt', '0IHcpVHDwnsQHZBytn9x77SobNPSsepNFbDdC6iSyLmoYLc7CfBK9uAJo37DhNpm')
+client = RecombeeClient('wt-proj', 'gVEMJ5zdYOleXwlX4MyCtExwaa8MgAFgejz0W7TPa8kB1Qebtp1t0OvESDDdwrmO')
 
 purchases = []
 
