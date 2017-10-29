@@ -15,7 +15,7 @@ class CredentialsAdmin(admin.ModelAdmin):
 class Course(models.Model):
     course_name = models.CharField(max_length=100)
     course_id = models.IntegerField(max_length = 20)
-    course_description = models.CharField(max_length=1000)
+    course_description = models.CharField(max_length=1000000)
 
     def __str__(self):
         return self.course_name
