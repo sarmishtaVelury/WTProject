@@ -5,18 +5,6 @@
                     <li>
                     	<a href="/login/"><button class = "btn-lg btn-primary navbar-btn">Sign In</button></a>
                     </li>
-                    <li>
-                    	<a href="/logout/" onclick="signOut();">
-                    	<script type="text/javascript">
-                    		function signOut() {
-    							var auth2 = gapi.auth2.getAuthInstance();
-    							auth2.signOut().then(function () {
-      							console.log('User signed out.');
-    						});
-  									}
-                    	</script>
-                    	<button class = "btn-lg btn-primary navbar-btn">Sign Out</button></a>
-                    </li>
                 </ul>
             </div>
         </div>

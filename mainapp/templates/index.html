@@ -102,8 +102,7 @@
     <div class="navbar navbar-default yamm" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
-
-                <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
+                <a class="navbar-brand home" href="index" data-animate-hover="bounce">
                     <img src="{% static 'img/logo.png' %}" alt="Obaju logo" class="hidden-xs">
                     <img src="{% static 'img/logo-small.png' %}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
@@ -116,9 +115,10 @@
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
                     </button>
+                    <!--
                     <a class="btn btn-default navbar-toggle" href="basket.html">
                         <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <!--/.navbar-header -->
@@ -363,10 +363,10 @@
             <!--/.nav-collapse -->
 
             <div class="navbar-buttons">
-
+                <!--
                 <div class="navbar-collapse collapse right" id="basket-overview">
                     <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
-                </div>
+                </div> -->
                 <!--/.nav-collapse -->
 
                 <div class="navbar-collapse collapse right" id="search-not-mobile">
@@ -400,7 +400,7 @@
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
-
+ 
 
 
     <div id="all">
@@ -411,16 +411,16 @@
                 <div class="col-md-12">
                     <div id="main-slider">
                         <div class="item">
-                            <img src="{% static 'img/main-slider1.jpg' %}" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="{% static 'img/main-slider2.jpg' %}" alt="">
+                            <img src="{% static 'img/main-slider2.jpg' %}" alt="" class="img-responsive">
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="{% static 'img/main-slider3.jpg' %}" alt="">
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="{% static 'img/main-slider4.jpg' %}" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="{% static 'img/main-slider1.jpg' %}" alt="">
                         </div>
                     </div>
                     <!-- /#main-slider -->
@@ -438,7 +438,7 @@
                                 <div class="icon"><i class="fa fa-heart"></i>
                                 </div>
 
-                                <h3><a href="#">We love our customers</a></h3>
+                                <h3><a href="/">We love our Visitors</a></h3>
                                 <p>We are known to provide best possible service ever</p>
                             </div>
                         </div>
@@ -448,8 +448,8 @@
                                 <div class="icon"><i class="fa fa-tags"></i>
                                 </div>
 
-                                <h3><a href="#">Best prices</a></h3>
-                                <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
+                                <h3><a href="/">Best courses</a></h3>
+                                <p>Latest and Updated</p>
                             </div>
                         </div>
 
@@ -459,7 +459,7 @@
                                 </div>
 
                                 <h3><a href="#">100% satisfaction guaranteed</a></h3>
-                                <p>Free returns on everything for 3 months.</p>
+                                <p>You can count on us.</p>
                             </div>
                         </div>
                     </div>
@@ -480,7 +480,7 @@
                 <div class="box">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2>Hot this week</h2>
+                            <h2>Popular Courses this week</h2>
                         </div>
                     </div>
                 </div>
@@ -507,8 +507,8 @@
                                     <img src="{% static 'img/product1.jpg' %}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail.html">Fur coat with very but very very long name</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail.html">Popular Course Name</a></h3>
+                                    
                                 </div>
                                 <!-- /.text -->
                             </div>
@@ -535,28 +535,12 @@
                                     <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail.html">White Blouse Armani</a></h3>
-                                    <p class="price"><del>$280</del> $143.00</p>
+                                    <h3><a href="detail.html">Popular Course Name</a></h3>
+                                    
                                 </div>
                                 <!-- /.text -->
 
-                                <div class="ribbon sale">
-                                    <div class="theribbon">SALE</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                                
                             </div>
                             <!-- /.product -->
                         </div>
@@ -581,8 +565,8 @@
                                     <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail.html">Popular Course Name</a></h3>
+                                    
                                 </div>
                                 <!-- /.text -->
                             </div>
@@ -609,8 +593,8 @@
                                     <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail.html">Popular Course Name</a></h3>
+                                    
                                 </div>
                                 <!-- /.text -->
                             </div>
@@ -637,142 +621,24 @@
                                     <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="detail.html">White Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="detail.html">Popular Course Name</a></h3>
+
                                 </div>
                                 <!-- /.text -->
 
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                               
                             </div>
                             <!-- /.product -->
                         </div>
 
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="{% static 'img/product1.jpg' %}' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="{% static 'img/product1_2.jpg' %}' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="{% static 'img/product1.jpg' %}' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">Fur coat</a></h3>
-                                    <p class="price">$143.00</p>
-                                </div>
-                                <!-- /.text -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                            </div>
-                            <!-- /.product -->
-                        </div>
-                        <!-- /.col-md-4 -->
-
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="{% static 'img/product2_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">White Blouse Armani</a></h3>
-                                    <p class="price"><del>$280</del> $143.00</p>
-                                </div>
-                                <!-- /.text -->
-
-                                <div class="ribbon sale">
-                                    <div class="theribbon">SALE</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="{% static 'img/product3_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
-                                </div>
-                                <!-- /.text -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                    </div>
-                    <!-- /.product-slider -->
-                </div>
-                <!-- /.container -->
-
+                        
             </div>
             <!-- /#hot -->
 
             <!-- *** HOT END *** -->
-
-            <!-- *** GET INSPIRED ***
- _________________________________________________________ -->
+<!--
+             *** GET INSPIRED ***
+ _________________________________________________________ 
             <div class="container" data-animate="fadeInUpBig">
                 <div class="col-md-12">
                     <div class="box slideshow">
@@ -798,7 +664,7 @@
                     </div>
                 </div>
             </div>
-            <!-- *** GET INSPIRED END *** -->
+            <!*** GET INSPIRED END *** -->
 
             <!-- *** BLOG HOMEPAGE ***
  _________________________________________________________ -->
@@ -806,14 +672,14 @@
             <div class="box text-center" data-animate="fadeInUp">
                 <div class="container">
                     <div class="col-md-12">
-                        <h3 class="text-uppercase">From our blog</h3>
+                        <h3 class="text-uppercase">Contribute on Github</h3>
 
-                        <p class="lead">What's new in the world of fashion? <a href="blog.html">Check our blog!</a>
+                        <p class="lead">Help Us! <a href="https://github.com/sarmishtaVelury/WTProject">Check our repository!</a><!-- Its private riht now -->
                         </p>
                     </div>
                 </div>
             </div>
-
+<!--
             <div class="container">
 
                 <div class="col-md-12" data-animate="fadeInUp">
@@ -847,10 +713,10 @@
                         </div>
 
                     </div>
-                    <!-- /#blog-homepage -->
+                    
                 </div>
             </div>
-            <!-- /.container -->
+            <! /.container -->
 
             <!-- *** BLOG HOMEPAGE END *** -->
 
@@ -929,13 +795,13 @@
 
                         <h4>Where to find us</h4>
 
-                        <p><strong>Obaju Ltd.</strong>
-                            <br>13/25 New Avenue
-                            <br>New Heaven
-                            <br>45Y 73J
-                            <br>England
+                        <p><strong>WeAreTutors Ltd.</strong>
+                            <br>DJ Sanghvi College of Engineering
+                            <br>Vile Parle
+                            <br>Mumbai
+                            <br>400058
                             <br>
-                            <strong>Great Britain</strong>
+                            <strong></strong>
                         </p>
 
                         <a href="contact.html">Go to contact page</a>
@@ -949,9 +815,9 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Get the news</h4>
+                        <h4>Subscribe</h4>
 
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="text-muted">Get our latest news</p>
 
                         <form>
                             <div class="input-group">
@@ -960,7 +826,7 @@
 
                                 <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+			    <button class="btn btn-default" type="button">Go!</button>
 
 			</span>
 
@@ -1011,8 +877,7 @@
             </div>
         </div>
         <!-- *** COPYRIGHT END *** -->
-
-
+    
 
     </div>
     <!-- /#all -->
