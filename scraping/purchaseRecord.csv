@@ -1,0 +1,651 @@
+0,0,HTML~ CSS for Web Developers 
+1,1,A Crash Course in Data Science 
+2,2,Combining and Analyzing Complex Data 
+3,3,HTML~ CSS~ and Javascript for Web Developers 
+4,4,Robotics 
+5,5,Divide and Conquer~ Sorting and Searching~ and Randomized Algorithms 
+6,6,Parallel~ Concurrent~ and Distributed Programming in Java 
+7,7,Data Visualization with Tableau 
+8,8,Introduction to People Analytics 
+9,9,Cybersecurity 
+10,10,System Validation (2): Model process behaviour 
+11,11,Programming for Everybody (Getting Started with Python) 
+12,12,Algorithms~ Part II 
+13,13,Privacy~ Reputation~ and Identity in a Digital Age 
+14,14,Big Data Essentials: HDFS~ MapReduce and Spark RDD 
+15,15,Interactuando con el hardware del dispositivo iOS 
+16,16,What is a Proof? 
+17,17,Recommender Systems:  Evaluation and Metrics 
+18,18,Genomic Data Science with Galaxy 
+19,19,Cloud Computing Concepts: Part 2 
+20,20,Character Design for Video Games 
+21,21,Exploratory Data Analysis 
+22,22,Data Science at Scale 
+23,23,The Fundamentals of Computing Capstone Exam 
+24,24,Introduction to Data Science in Python 
+25,25,Data-driven Astronomy 
+26,26,Probabilistic Graphical Models 3: Learning 
+27,27,Basic Data Descriptors~ Statistical Distributions~ and Application to Business Decisions 
+28,28,Data Science Math Skills 
+29,29,Big Data - Capstone Project 
+30,30,Google Cloud Platform Fundamentals for AWS Professionals 
+31,31,Python Data Analysis 
+32,32,Building Resilient Streaming Systems on Google Cloud Platform 
+33,33,Data Structures and Algorithms 
+34,34,Problem Solving with Excel  
+35,35,Capstone: Retrieving~ Processing~ and Visualizing Data with Python 
+36,36,Business Analytics and Digital Media 
+37,37,Interfaz de usuario en iOS 
+38,38,Digital Thread: Components 
+39,39,Parallel programming 
+40,40,Business Analytics 
+41,41,Design and Analyze Secure Networked Systems 
+42,42,Building R Packages 
+43,43,Introduction to Structured Query Language (SQL) 
+44,44,Inferential Statistics 
+45,45,Cloud Networking 
+46,46,Introduction to Spreadsheets and Models 
+47,47,A developer's guide to the Internet of Things (IoT) 
+48,48,Text Mining and Analytics 
+49,49,Sequence Models 
+50,50,Windows Server Management and Security 
+51,51,Applied Machine Learning in Python 
+52,52,Geodesign: Change Your World 
+53,53,Cryptography I 
+54,54,Statistics for Genomic Data Science 
+55,55,Communicating Data Science Results 
+56,56,Data Structures 
+57,57,User Research and Design 
+58,58,Testing with Agile 
+59,59,Cybersecurity Policy for Water and Electricity Infrastructures 
+60,60,Building Web Applications in PHP 
+61,61,Game Design Document: Define the Art & Concepts 
+62,62,Algorithmic Thinking (Part 2) 
+63,63,Advanced Manufacturing Process Analysis 
+64,64,Interprofessional Healthcare Informatics  
+65,65,Software Development Processes and Methodologies 
+66,66,Mobile Interaction Design: How to Design Usable Mobile Products and Services 
+67,67,Data Visualization with Advanced Excel 
+68,68,Big Data Applications: Real-Time Streaming 
+69,69,Algorithms~ Part I 
+70,70,Cybersecurity: Developing a Program for Your Business 
+71,71,Matrix Factorization and Advanced Techniques 
+72,72,Homeland Security and Cybersecurity Future 
+73,73,Introduction to Graph Theory 
+74,74,Design and Build a Data Warehouse for Business Intelligence Implementation 
+75,75,Server-side Development with NodeJS~ Express and MongoDB 
+76,76,iOS Development for Creative Entrepreneurs 
+77,77,Data Structures and Performance 
+78,78,Wireless Communication Emerging Technologies 
+79,79,Full Stack Web and Multiplatform Mobile App Development 
+80,80,Mastering the Software Engineering Interview 
+81,81,Asymmetric Cryptography and Key Management 
+82,82,Executive Data Science Capstone 
+83,83,Data Mining  
+84,84,Maps and the Geospatial Revolution 
+85,85,Creative Programming for Digital Media & Mobile Apps 
+86,86,Applied Plotting~ Charting & Data Representation in Python 
+87,87,Greedy Algorithms~ Minimum Spanning Trees~ and Dynamic Programming 
+88,88,An Introduction to Interactive Programming in Python (Part 1) 
+89,89,Social Media Data Analytics 
+90,90,Introduction to Neurohacking In R 
+91,91,Machine Learning Foundations: A Case Study Approach 
+92,92,Applied Cryptography 
+93,93,Introduction to Formal Concept Analysis 
+94,94,Understanding Your Data: Analytical Tools 
+95,95,Data Mining Project 
+96,96,Statistics with R 
+97,97,Java Programming: Principles of Software Design 
+98,98,Data Analysis and Presentation Skills: the PwC Approach 
+99,99,Advanced Business Analytics 
+100,100,Accounting Analytics 
+101,101,Intelligent Machining 
+102,102,A developer's guide to Exploring and Visualizing IoT Data 
+103,103,Developing Android Apps with App Inventor 
+104,104,Digital Signal Processing 
+105,105,Code Yourself! An Introduction to Programming 
+106,106,Programming Foundations with JavaScript~ HTML and CSS 
+107,107,Object Oriented Programming in Java 
+108,108,Structuring Machine Learning Projects 
+109,109,Wharton Business and Financial Modeling Capstone 
+110,110,Introduction to Big Data 
+111,111,Hadoop Platform and Application Framework 
+112,112,Introduction to TCP/IP 
+113,113,An Introduction to Programming the Internet of Things (IOT) 
+114,114,Rails with Active Record and Action Pack 
+115,115,Big Data Modeling and Management Systems 
+116,116,Web Application Development with JavaScript and MongoDB 
+117,117,Managing Big Data with MySQL 
+118,118,Pattern Discovery in Data Mining 
+119,119,Getting Started: Agile Meets Design Thinking 
+120,120,Build Your First Android App (Project-Centered Course) 
+121,121,C++ For C Programmers~ Part B 
+122,122,Data-driven Decision Making 
+123,123,Machine Learning for Data Analysis 
+124,124,Capstone:  Autonomous Runway Detection for IoT 
+125,125,Computational Investing~ Part I 
+126,126,Principles of Computing (Part 2) 
+127,127,Mastering Software Development in R Capstone 
+128,128,Survey Data Collection and Analytics  
+129,129,Digital Analytics for Marketing Professionals: Marketing Analytics in Practice 
+130,130,Fundamentals of Graphic Design 
+131,131,Human-Centered Design: an Introduction 
+132,132,Information Security: Context and Introduction 
+133,133,Convolutional Neural Networks 
+134,134,Home Networking Basics 
+135,135,Dealing With Missing Data 
+136,136,Android App Components - Services~ Local IPC~ and Content Providers 
+137,137,Mastering Software Development in R 
+138,138,Front-End Web UI Frameworks and Tools: Bootstrap 4 
+139,139,Python for Genomic Data Science 
+140,140,Digital Thread: Implementation 
+141,141,Quantitative Formal Modeling and Worst-Case Performance Analysis 
+142,142,Software Product Management Capstone 
+143,143,Elastic Cloud Infrastructure: Scaling and Automation 
+144,144,Java Programming: Solving Problems with Software 
+145,145,Linear Regression for Business Statistics 
+146,146,Data Engineering on Google Cloud Platform 
+147,147,Story and Narrative Development for Video Games 
+148,148,Software Security  
+149,149,Advanced Linear Models for Data Science 1: Least Squares 
+150,150,Bayesian Methods for Machine Learning 
+151,151,Data Management for Clinical Research 
+152,152,Software Design and Architecture 
+153,153,Introduction to Programming with MATLAB 
+154,154,Introduction to Web Development 
+155,155,Emerging Technologies Capstone  
+156,156,VLSI CAD Part II: Layout 
+157,157,Agile Development 
+158,158,Cybersecurity and Its Ten Domains 
+159,159,Motores gráficos en videojuegos: game engine 
+160,160,Symmetric Cryptography 
+161,161,Python Programming: A Concise Introduction 
+162,162,Applied Social Network Analysis in Python 
+163,163,Discrete Mathematics 
+164,164,Enterprise System Management and Security  
+165,165,Data Visualization 
+166,166,Object-Oriented Design 
+167,167,Control of Mobile Robots 
+168,168,Geospatial Analysis Project 
+169,169,Functional Programming in Scala Capstone 
+170,170,Fundamentals of Quantitative Modeling 
+171,171,Python for Everybody 
+172,172,Social Science Approaches to the Study of Chinese Society Part 1 
+173,173,Effective Business Presentations with Powerpoint 
+174,174,Algorithms 
+175,175,Research Data Management and Sharing 
+176,176,Business Analytics for Decision Making 
+177,177,Java Programming: Build a Recommendation System 
+178,178,Internet of Things: Multimedia Technologies 
+179,179,Learn to Program: Crafting Quality Code 
+180,180,Excel to MySQL: Analytic Techniques for Business 
+181,181,Genomic Data Science and Clustering (Bioinformatics V) 
+182,182,Using Databases with Python 
+183,183,Python Data Visualization 
+184,184,Introduction to Deep Learning 
+185,185,The Business of Cybersecurity Capstone 
+186,186,Increasing Real Estate Management Profits: Harnessing Data Analytics 
+187,187,Advanced Machine Learning 
+188,188,Modeling Risk and Realities 
+189,189,Entender el diseño 
+190,190,Serverless Data Analysis with Google BigQuery and Cloud Dataflow 
+191,191,Internet of Things 
+192,192,Google Cloud Platform Fundamentals: Core Infrastructure 
+193,193,Building Arduino robots and devices 
+194,194,Recommender Systems 
+195,195,iOS App Development with Swift 
+196,196,Developing Data Products 
+197,197,Statistical Reasoning for Public Health 1: Estimation~ Inference~ & Interpretation 
+198,198,Game Development for Modern Platforms 
+199,199,Meaningful Marketing Insights 
+200,200,Multiplatform Mobile App Development with Web Technologies: Ionic and Cordova 
+201,201,Strategic Business Analytics 
+202,202,Diseño de videojuegos 
+203,203,Case studies in business analytics with ACCENTURE 
+204,204,Interaction Design 
+205,205,Introduction to Scripting in Python 
+206,206,Elastic Cloud Infrastructure: Containers and Services 
+207,207,Interfacing with the Raspberry Pi 
+208,208,Engineering Maintainable Android Apps 
+209,209,Understanding Clinical Research: Behind the Statistics 
+210,210,Decision-Making and Scenarios 
+211,211,C++ For C Programmers~ Part A 
+212,212,Detecting and Mitigating Cyber Threats and Attacks 
+213,213,Nearest Neighbor Collaborative Filtering 
+214,214,Evaluating User Interfaces 
+215,215,Introduction to MongoDB 
+216,216,Programming for the Internet of Things Project 
+217,217,Java for Android 
+218,218,Communicating Business Analytics Results 
+219,219,Executive Data Science 
+220,220,Introduction to Recommender Systems:  Non-Personalized and Content-Based 
+221,221,Agile Development in Practice (Project-centered Course) 
+222,222,Machine Learning: Regression 
+223,223,Introduction to Embedded Systems Software and Development Environments 
+224,224,Videojuegos: ¿de qué hablamos? 
+225,225,Virtual Reality 
+226,226,Exploring and Producing Data for Business Decision Making 
+227,227,Discrete Optimization 
+228,228,Applied Data Science with Python 
+229,229,VLSI CAD Part I: Logic 
+230,230,Improving Deep Neural Networks: Hyperparameter tuning~ Regularization and Optimization 
+231,231,Fundamentals of Network Communication 
+232,232,Cloud Computing 
+233,233,Machine Learning: Classification 
+234,234,Ruby on Rails Web Development 
+235,235,Bioconductor for Genomic Data Science 
+236,236,Introduction to Applied Cryptography 
+237,237,Proactive Computer Security 
+238,238,Running Product Design Sprints 
+239,239,Cyber Security in Manufacturing   
+240,240,Text Retrieval and Search Engines 
+241,241,Cybersecurity for Business 
+242,242,Managing Data Analysis 
+243,243,Introduction to Data Analysis Using Excel 
+244,244,Database Management Essentials 
+245,245,Cyber Threats and Attack Vectors 
+246,246,Introduction to Typography 
+247,247,Cybersecurity and the X-Factor 
+248,248,Introduction to Logic 
+249,249,Bayesian Statistics: From Concept to Data Analysis 
+250,250,Methods and Statistics in Social Sciences 
+251,251,Brand New Brand 
+252,252,Fundamentals of Visualization with Tableau 
+253,253,Planning~ Auditing and Maintaining Enterprise Systems 
+254,254,Practical Machine Learning 
+255,255,Introduction to Imagemaking 
+256,256,Web Connectivity and Security in Embedded Systems 
+257,257,Customer Analytics 
+258,258,Hands-on Text Mining and Analytics 
+259,259,Digital Product Management: Modern Fundamentals 
+260,260,Creating Dashboards and Storytelling with Tableau 
+261,261,Introduction to Game Design 
+262,262,Introduction à la programmation orientée objet (en C++) 
+263,263,Learn to Program: The Fundamentals 
+264,264,Networks: Friends~ Money~ and Bytes 
+265,265,Measuring Causal Effects in the Social Sciences 
+266,266,Essential Cloud Infrastructure: Core Services 
+267,267,Principles of fMRI 1 
+268,268,Cybersecurity and Mobility 
+269,269,Introduction to CSS3 
+270,270,Applied Text Mining in Python 
+271,271,Quantitative Model Checking 
+272,272,Managing an Agile Team 
+273,273,计算机系统基础（一） ：程序的表示、转换与链接 
+274,274,Cloud Computing Applications~ Part 1: Cloud Systems and Infrastructure 
+275,275,"Capstone MOOC for ""Android App Development"" "
+276,276,An Introduction to Interactive Programming in Python (Part 2) 
+277,277,Global Warming II: Create Your Own Models in Python 
+278,278,Big Data~ Genes~ and Medicine 
+279,279,Beginning Game Programming with C# 
+280,280,Essential Design Principles for Tableau 
+281,281,Principles of Game Design 
+282,282,Probabilistic Graphical Models 2: Inference 
+283,283,Functional Program Design in Scala 
+284,284,Fundamentals of Parallelism on Intel Architecture 
+285,285,Building Data Visualization Tools 
+286,286,Information Design 
+287,287,Distributed Programming in Java 
+288,288,Addressing Large Hadron Collider Challenges by Machine Learning 
+289,289,Reviews & Metrics for Software Improvements 
+290,290,Introduction to Genomic Technologies 
+291,291,Molecular Evolution (Bioinformatics IV) 
+292,292,Data Science in Real Life 
+293,293,Usable Security 
+294,294,Analysis of Algorithms 
+295,295,Ruby on Rails Web Services and Integration with MongoDB 
+296,296,Econometrics: Methods and Applications 
+297,297,Big Data~ Cloud Computing~ & CDN Emerging Technologies 
+298,298,Python Programming Essentials 
+299,299,Emerging Technologies: From Smartphones to IoT to Big Data 
+300,300,Data Communications and Network Services 
+301,301,Introduction to Search Engine Optimization 
+302,302,Service-Oriented Architecture 
+303,303,The Arduino Platform and C Programming 
+304,304,Concurrent Programming in Java 
+305,305,Shortest Paths Revisited~ NP-Complete Problems and What To Do About Them 
+306,306,Audio Signal Processing for Music Applications 
+307,307,Making Your First Virtual Reality Game 
+308,308,Math behind Moneyball 
+309,309,Hacking and Patching 
+310,310,Java Programming: Arrays~ Lists~ and Structured Data 
+311,311,Advanced R Programming 
+312,312,Advanced Business Analytics Capstone 
+313,313,Programming Mobile Applications for Android Handheld Systems: Part 1 
+314,314,Mathematical Biostatistics Boot Camp 2 
+315,315,Data Manipulation at Scale: Systems and Algorithms 
+316,316,Cryptography 
+317,317,Statistics with R Capstone 
+318,318,Deception Detox - using research methods and statistics to change the world 
+319,319,Development of Real-Time Systems 
+320,320,JavaScript~ jQuery~ and JSON 
+321,321,Foundations of strategic business analytics 
+322,322,Object Oriented Java Programming: Data Structures and Beyond 
+323,323,Agile Software Development 
+324,324,Basic Statistics 
+325,325,Initiation à la programmation (en C++) 
+326,326,Improving your statistical inferences 
+327,327,Hardware Security 
+328,328,Computational Neuroscience 
+329,329,Probabilistic Graphical Models 1: Representation 
+330,330,Software Product Management 
+331,331,Linux Server Management and Security 
+332,332,Business Metrics for Data-Driven Companies 
+333,333,Business Statistics and Analysis 
+334,334,Programming Languages~ Part B 
+335,335,The Internet and You 
+336,336,Functional Programming Principles in Scala 
+337,337,Agile Planning for Software Products 
+338,338,Basic Cryptography and Programming with Crypto API 
+339,339,Big Data Science with the BD2K-LINCS Data Coordination and Integration Center 
+340,340,Forensic Accounting and Fraud Examination 
+341,341,Big Data Applications: Machine Learning at Scale 
+342,342,Lean Software Development 
+343,343,Advanced Data Structures in Java 
+344,344,Genomic Data Science 
+345,345,Kinetics: Studying Spacecraft Motion 
+346,346,Embedded Hardware and Operating Systems 
+347,347,Business Applications of Hypothesis Testing and Confidence Interval Estimation  
+348,348,Introduction to Data Analytics for Business 
+349,349,The R Programming Environment 
+350,350,Fundamentals of Computer Network Security 
+351,351,Cluster Analysis in Data Mining 
+352,352,Network Protocols and Architecture 
+353,353,Game Design and Development Capstone 
+354,354,Software Architecture for the Internet of Things 
+355,355,Introduction to Reinforcement Learning 
+356,356,Web Design for Everybody (Basics of Web Development and Coding) 
+357,357,Graph Search~ Shortest Paths~ and Data Structures 
+358,358,Internet History~ Technology~ and Security 
+359,359,User Experience: Research & Prototyping 
+360,360,Materials Data Sciences and Informatics 
+361,361,Qualitative Research Methods 
+362,362,Social Science Approaches to the Study of Chinese Society Part 2 
+363,363,Bioinformatics 
+364,364,A Crash Course in Causality:  Inferring Causal Effects from Observational Data 
+365,365,Responsive Website Development and Design 
+366,366,Bayesian Statistics 
+367,367,The Importance of Listening 
+368,368,Android App Development 
+369,369,Search Engine Optimization (SEO) 
+370,370,Software Processes and Agile Practices 
+371,371,Bioinformatics Capstone: Big Data in Biology 
+372,372,3D Models for Virtual Reality 
+373,373,Finding Hidden Messages in DNA (Bioinformatics I) 
+374,374,Introduction to Architecting Smart IoT Devices 
+375,375,Networking and Security in iOS Applications 
+376,376,Understanding China~ 1700-2000: A Data Analytic Approach~ Part 2 
+377,377,International Cyber Conflicts 
+378,378,Social and Economic Networks:  Models and Analysis 
+379,379,Internet of Things: Communication Technologies 
+380,380,Big Data 
+381,381,Advanced Linear Models for Data Science 2: Statistical Linear Models 
+382,382,Cybersecurity Policy for Aviation and Internet Infrastructures 
+383,383,Front-End JavaScript Frameworks: Angular 
+384,384,Современная комбинаторика (Modern combinatorics) 
+385,385,Introduction to UI Design 
+386,386,Algorithms on Graphs 
+387,387,How To Create a Website in a Weekend! (Project-Centered Course) 
+388,388,Secure Networked System with Firewall and IDS 
+389,389,Capstone: Analyzing (Social) Network Data 
+390,390,Getting and Cleaning Data 
+391,391,Combinatorics and Probability 
+392,392,Data Analysis Tools 
+393,393,Genomic Data Science Capstone 
+394,394,Marketing Analytics 
+395,395,Introduction to Software Product Management 
+396,396,UI Design Capstone 
+397,397,R Programming 
+398,398,Data Visualization and Communication with Tableau 
+399,399,Fundamentals of Digital Image and Video Processing 
+400,400,Introduction to Cybersecurity for Business 
+401,401,Approximation Algorithms Part II 
+402,402,Architecting Smart IoT Devices 
+403,403,Digital Footprint 
+404,404,Deep Learning 
+405,405,Approximation Algorithms Part I 
+406,406,Introduction to Natural Language Processing 
+407,407,Networks Illustrated: Principles without Calculus 
+408,408,Java Programming and Software Engineering Fundamentals 
+409,409,Geographic Information Systems (GIS) 
+410,410,Business Intelligence Concepts~ Tools~ and Applications 
+411,411,Data Management and Visualization 
+412,412,Interactive Computer Graphics 
+413,413,User Interface Design 
+414,414,Introduction to Game Development 
+415,415,Julia Scientific Programming 
+416,416,People Analytics 
+417,417,Big Data Analysis with Scala and Spark 
+418,418,Advanced Manufacturing Enterprise 
+419,419,Big Data Services: Capstone Project 
+420,420,Relational Database Support for Data Warehouses 
+421,421,Natural Language Processing 
+422,422,Digital Systems: From Logic Gates to Processors 
+423,423,离散数学概论 Discrete Mathematics Generality 
+424,424,Biology Meets Programming: Bioinformatics for Beginners 
+425,425,Deep Learning in Computer Vision 
+426,426,Packet Switching Networks and Algorithms 
+427,427,Data Visualization with Tableau Project 
+428,428,Algorithms on Strings 
+429,429,System Validation: Automata and behavioural equivalences 
+430,430,Foundations of Marketing Analytics 
+431,431,Introduction to the Internet of Things and Embedded Systems 
+432,432,Parallel Programming in Java 
+433,433,Data Science Capstone 
+434,434,Statistical Inference 
+435,435,Google Cloud Platform Big Data and Machine Learning Fundamentals 
+436,436,Internet Connection: How to Get Online? 
+437,436,Internet Connection: How to Get Online? 
+438,438,Computer Security and Systems Management 
+439,439,Principles of fMRI 2 
+440,440,Functional Programming in Scala 
+441,441,Framework for Data Collection and Analysis 
+442,442,Machine Learning With Big Data 
+443,443,Data Science 
+444,444,Predictive Modeling and Analytics  
+445,445,Introduction to Virtual Reality 
+446,446,Building Interactive 3D Characters and Social VR 
+447,447,System Validation (3): Requirements by modal formulas 
+448,448,Computer Architecture 
+449,449,Data Analysis and Interpretation 
+450,450,Bayesian Statistics: Techniques and Models 
+451,451,Image and Video Processing: From Mars to Hollywood with a Stop at the Hospital 
+452,452,Advanced Algorithms and Complexity 
+453,453,Principles of Computing (Part 1) 
+454,454,Experimentation for Improvement 
+455,454,Experimentation for Improvement 
+456,456,Comparing Genes~ Proteins~ and Genomes (Bioinformatics III) 
+457,457,Big Data Integration and Processing 
+458,458,Finding Mutations in DNA and Proteins (Bioinformatics VI) 
+459,459,Introduction to Discrete Mathematics for Computer Science 
+460,460,Kinematics: Describing the Motions of Spacecraft 
+461,461,TCP/IP and Advanced Topics 
+462,462,Design Principles: an Introduction 
+463,463,Interaction Design Capstone Project 
+464,464,Malicious Software and its Underground Economy: Two Sides to Every Story 
+465,465,Cybersecurity Capstone Project 
+466,466,Cybersecurity and the Internet of Things 
+467,467,Solving Delivery Problem 
+468,468,Software Development Lifecycle 
+469,469,Reproducible Research 
+470,470,Machine Learning: Clustering & Retrieval 
+471,471,Software Architecture 
+472,472,Bitcoin and Cryptocurrency Technologies 
+473,473,Neural Networks and Deep Learning 
+474,474,Fundamentals of Computing 
+475,475,MBSE: Model-Based Systems Engineering  
+476,476,Digital Manufacturing Commons (opendmc.org) 
+477,477,Games~ Sensors and Media 
+478,478,Prototyping and Design 
+479,479,Algorithmic Thinking (Part 1) 
+480,480,Control of Nonlinear Spacecraft Attitude Motion 
+481,481,Linear Regression and Modeling  
+482,482,The Raspberry Pi Platform and Python Programming for the Raspberry Pi 
+483,483,Mastering Data Analysis in Excel 
+484,484,Data Analytics for Lean Six Sigma 
+485,485,Peer-to-Peer Protocols and Local Area Networks 
+486,486,Software Defined Networking 
+487,487,Genome Sequencing (Bioinformatics II) 
+488,488,Data Warehouse Concepts~ Design~ and Data Integration 
+489,489,Capstone:  Create Value from Open Data 
+490,490,Architecting with Google Cloud Platform 
+491,491,How to Win a Data Science Competition: Learn from Top Kagglers 
+492,492,The Unix Workbench 
+493,493,Design Patterns 
+494,494,Web Applications for Everybody 
+495,495,Introduction to Cisco Networking 
+496,496,Data Processing Using Python 
+497,497,Cloud Computing Concepts~ Part 1 
+498,498,Client Needs and Software Requirements  
+499,499,World Design for Video Games 
+500,500,Computer Communications 
+501,501,Internet of Things & Augmented Reality Emerging Technologies 
+502,502,Probabilistic Graphical Models  
+503,503,Operations Analytics 
+504,504,Develop and Deploy Windows Applications on Google Cloud Platform 
+505,505,Python Data Representations 
+506,506,Basic Modeling for Discrete Optimization 
+507,507,Data Analysis and Interpretation Capstone 
+508,508,An Intuitive Introduction to Probability 
+509,509,Business Analytics Capstone 
+510,510,Using Python to Access Web Data 
+511,511,Data Warehousing for Business Intelligence 
+512,512,Algorithmic Toolbox 
+513,513,Data Science at Scale - Capstone Project 
+514,514,Big Data for Data Engineers 
+515,515,Statistical Reasoning for Public Health 2: Regression Methods 
+516,516,Introduction à la programmation orientée objet (en Java) 
+517,517,Digital Manufacturing & Design 
+518,518,Process Mining: Data science in Action 
+519,519,Cisco Networking Basics 
+520,520,Graph Analytics for Big Data 
+521,521,Introduction to User Experience Design  
+522,522,G Suite Administrator Fundamentals 
+523,523,Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform 
+524,524,Neural Networks for Machine Learning 
+525,525,Building Database Applications in PHP 
+526,526,Visual Analytics with Tableau 
+527,527,Gamification 
+528,528,Securing Digital Democracy 
+529,529,Engineering Practices for Building Quality Software 
+530,530,Number Theory and Cryptography 
+531,531,Classical Cryptosystems and Core Concepts 
+532,532,Practical Predictive Analytics: Models and Methods 
+533,533,Python Data Structures 
+534,534,Recommender Systems Capstone 
+535,535,Business Statistics and Analysis Capstone 
+536,536,Homeland Security and Cybersecurity 
+537,537,Homeland Security & Cybersecurity Connection - It's Not About the Terrorists 
+538,538,The Finite Element Method for Problems in Physics 
+539,539,3D Interaction Design in Virtual Reality 
+540,540,Initiation à la programmation (en Java) 
+541,541,Game Design and Development 
+542,542,Regression Models 
+543,543,Deep Learning for Business 
+544,544,Designing~ Running~ and Analyzing Experiments 
+545,545,Command Line Tools for Genomic Data Science 
+546,546,Mathematical Foundations for Cryptography 
+547,547,Introduction to Probability and Data 
+548,548,Advanced Modeling for Discrete Optimization 
+549,549,Understanding China~ 1700-2000: A Data Analytic Approach~ Part 1 
+550,550,System Validation (4): Modelling Software~ Protocols~ and other behaviour 
+551,551,The Data Scientist’s Toolbox 
+552,552,Programming Languages~ Part A 
+553,553,Introduction to HTML5 
+554,554,Building a Data Science Team 
+555,555,Serverless Machine Learning with Tensorflow on Google Cloud Platform 
+556,556,Essential Cloud Infrastructure: Foundation 
+557,557,Programming Languages~ Part C 
+558,558,Cloud Computing Applications~ Part 2: Big Data and Applications in the Cloud 
+559,559,Data Analysis and Presentation Skills: the PwC Approach Final Project 
+560,560,Machine Learning 
+561,561,Programming Fundamentals 
+562,562,Biological Diversity (Theories~ Measures and Data sampling techniques) 
+563,563,Interactivity with JavaScript 
+564,564,Regression Modeling in Practice 
+565,565,Build a Modern Computer from First Principles: Nand to Tetris Part II (project-centered course) 
+566,566,Multiplatform Mobile App Development with NativeScript 
+567,567,Genome Assembly Programming Challenge 
+568,568,Algorithms for DNA Sequencing 
+569,569,Big Data Analysis: Hive~ Spark SQL~ DataFrames and GraphFrames 
+570,570,Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course) 
+571,38,Digital Thread: Components 
+572,39,Parallel programming 
+573,40,Business Analytics 
+574,41,Design and Analyze Secure Networked Systems 
+575,42,Building R Packages 
+576,43,Introduction to Structured Query Language (SQL) 
+577,44,Inferential Statistics 
+578,45,Cloud Networking 
+579,46,Introduction to Spreadsheets and Models 
+580,47,A developer's guide to the Internet of Things (IoT) 
+581,48,Text Mining and Analytics 
+582,49,Sequence Models 
+583,50,Windows Server Management and Security 
+584,51,Applied Machine Learning in Python 
+585,52,Geodesign: Change Your World 
+586,53,Cryptography I 
+587,54,Statistics for Genomic Data Science 
+588,55,Communicating Data Science Results 
+589,56,Data Structures 
+590,57,User Research and Design 
+591,58,Testing with Agile 
+592,59,Cybersecurity Policy for Water and Electricity Infrastructures 
+593,60,Building Web Applications in PHP 
+594,61,Game Design Document: Define the Art & Concepts 
+595,62,Algorithmic Thinking (Part 2) 
+596,63,Advanced Manufacturing Process Analysis 
+597,64,Interprofessional Healthcare Informatics  
+598,65,Software Development Processes and Methodologies 
+599,66,Mobile Interaction Design: How to Design Usable Mobile Products and Services 
+600,67,Data Visualization with Advanced Excel 
+601,68,Big Data Applications: Real-Time Streaming 
+602,69,Algorithms~ Part I 
+603,70,Cybersecurity: Developing a Program for Your Business 
+604,71,Matrix Factorization and Advanced Techniques 
+605,72,Homeland Security and Cybersecurity Future 
+606,73,Introduction to Graph Theory 
+607,74,Design and Build a Data Warehouse for Business Intelligence Implementation 
+608,75,Server-side Development with NodeJS~ Express and MongoDB 
+609,76,iOS Development for Creative Entrepreneurs 
+610,77,Data Structures and Performance 
+611,78,Wireless Communication Emerging Technologies 
+612,79,Full Stack Web and Multiplatform Mobile App Development 
+613,80,Mastering the Software Engineering Interview 
+614,81,Asymmetric Cryptography and Key Management 
+615,82,Executive Data Science Capstone 
+616,83,Data Mining  
+617,84,Maps and the Geospatial Revolution 
+618,85,Creative Programming for Digital Media & Mobile Apps 
+619,86,Applied Plotting~ Charting & Data Representation in Python 
+620,87,Greedy Algorithms~ Minimum Spanning Trees~ and Dynamic Programming 
+621,88,An Introduction to Interactive Programming in Python (Part 1) 
+622,89,Social Media Data Analytics 
+623,90,Introduction to Neurohacking In R 
+624,91,Machine Learning Foundations: A Case Study Approach 
+625,92,Applied Cryptography 
+626,540,Initiation à la programmation (en Java) 
+627,541,Game Design and Development 
+628,542,Regression Models 
+629,543,Deep Learning for Business 
+630,544,Designing~ Running~ and Analyzing Experiments 
+631,545,Command Line Tools for Genomic Data Science 
+632,546,Mathematical Foundations for Cryptography 
+633,547,Introduction to Probability and Data 
+634,548,Advanced Modeling for Discrete Optimization 
+635,549,Understanding China~ 1700-2000: A Data Analytic Approach~ Part 1 
+636,550,System Validation (4): Modelling Software~ Protocols~ and other behaviour 
+637,551,The Data Scientist’s Toolbox 
+638,552,Programming Languages~ Part A 
+639,553,Introduction to HTML5 
+640,554,Building a Data Science Team 
+641,555,Serverless Machine Learning with Tensorflow on Google Cloud Platform 
+642,556,Essential Cloud Infrastructure: Foundation 
+643,557,Programming Languages~ Part C 
+644,558,Cloud Computing Applications~ Part 2: Big Data and Applications in the Cloud 
+645,559,Data Analysis and Presentation Skills: the PwC Approach Final Project 
+646,560,Machine Learning 
+647,561,Programming Fundamentals 
+648,562,Biological Diversity (Theories~ Measures and Data sampling techniques) 
+649,563,Interactivity with JavaScript 
+650,564,Regression Modeling in Practice 
