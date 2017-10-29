@@ -21,21 +21,21 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
 
     <!-- styles -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.css' %} " rel="stylesheet">
 
     <!-- theme stylesheet -->
-    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+    <link href="{% static 'css/style.default.css' %}" rel="stylesheet" id="theme-stylesheet">
 
     <!-- your stylesheet with modifications -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
 
-    <script src="js/respond.min.js"></script>
+    <script src="{% static 'js/respond.min.js' %}"></script>
 
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}' %}">
 
 
 
@@ -105,8 +105,8 @@
             <div class="navbar-header">
 
                 <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
-                    <img src="img/logo.png" alt="Obaju logo" class="hidden-xs">
-                    <img src="img/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                    <img src="{% static 'img/logo.png' %}" alt="Obaju logo" class="hidden-xs">
+                    <img src="{% static 'img/logo-small.png' %}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -266,12 +266,12 @@
                                         <div class="col-sm-3">
                                             <div class="banner">
                                                 <a href="#">
-                                                    <img src="img/banner.jpg" class="img img-responsive" alt="">
+                                                    <img src="{% static 'img/banner.jpg" class="img img-responsive" alt="">
                                                 </a>
                                             </div>
                                             <div class="banner">
                                                 <a href="#">
-                                                    <img src="img/banner2.jpg" class="img img-responsive" alt="">
+                                                    <img src="{% static 'img/banner2.jpg" class="img img-responsive" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -447,7 +447,7 @@
 
                     <div class="banner">
                         <a href="#">
-                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
+                            <img src="{% static 'img/banner.jpg" alt="sales 2014" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -741,7 +741,7 @@
         function initialize() {
             var mapOptions = {
                 zoom: 15,
-                center: new google.maps.LatLng(49.1678136, 16.5671893),
+                center: new google.maps.LatLng(19.107111, 72.837011),
                 mapTypeId: google.maps.MapTypeId.ROAD,
                 scrollwheel: false
             }
