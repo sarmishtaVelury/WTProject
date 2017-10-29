@@ -74,24 +74,10 @@ def details(request, course_id):
 def share(request):
     return render(request, 'test.html')
 
-def courselist(request, credentials):
-
-    courses = get_courses(credentials)
-    for course in courses:
-        print(course)
-        coursename = course['name']
-        courseid = course['id']
-        coursedescription = course['descriptionHeading']
-        try:
-            old_course = Course.objects.get(course_id = courseid)
-        except:
-            new_course = Course.objects.create(course_name = coursename, course_id = courseid, course_description = coursedescription)
-
+def courselist(request):
     courselist = Course.objects.all()
     print(len(courselist))
-    return render(request, 'category-full.html',{'courselist':courselist})
-
-    return render(request, 'category-full.html', {'courselist':courselist})
+    return render(request, 'category-full1.html',{'courselist':courselist})
 
 def studentenroll(request,course_id):
     credentials = get_teacher_credentials()
@@ -127,7 +113,22 @@ def login(request):
 
     credentials = get_credentials()
     print(credentials)
-    return courselist(request,credentials)
+    courses = get_courses(credentials)
+    courselist = []
+    for course in courses:
+        print(course)
+        coursename = course['name']
+        courseid = course['id']
+        coursedescription = course['descriptionHeading']
+        try:
+            course = Course.objects.get(course_id = courseid)
+        except:
+            course = Course.objects.create(course_name = coursename, course_id = courseid, course_description = coursedescription)
+
+        courselist.append(course)
+
+    print(len(courselist))
+    return render(request, 'category-full.html',{'courselist':courselist})
 
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/classroom.googleapis.com-python-quickstart.json
