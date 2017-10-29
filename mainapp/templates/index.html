@@ -102,7 +102,7 @@
     <div class="navbar navbar-default yamm" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand home" href="index" data-animate-hover="bounce">
+                <a class="navbar-brand home" href="/index/" data-animate-hover="bounce">
                     <img src="{% static 'img/logo.png' %}" alt="Obaju logo" class="hidden-xs">
                     <img src="{% static 'img/logo-small.png' %}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                 </a>
@@ -126,19 +126,11 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="index.html">Home</a>
+                    <li class="active"><a href="/index/">Home</a>
                     </li>
-                    <li class=" yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Dashboard <b class="caret"></b></a>
-
+                    <li><a href="/login/">Dashboard</a>
                     </li>
-
-                    <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Catalog <b class="caret"></b></a>
-
-                    </li>
-
-                    
+                    <li><a href="/courselist/">Courses</a></li>
                 </ul>
 
             </div>
