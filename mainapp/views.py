@@ -26,7 +26,7 @@ from oauth2client.contrib import xsrfutil
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.contrib.django_util.storage import DjangoORMStorage
 from WeAreTutuors.forms import CourseForm, EnrolForm, ContactForm
-
+from mainapp.models import ContactModel
 
 try:
     import argparse
@@ -142,9 +142,15 @@ def logout(request):
 def contact(request):
     if request.method == 'POST':
         dta = ContactForm(request.POST or None)
-        if form.is_valid():
-            cd = dta.cleaned_data
-            ContactModel.objects.create(lender=cd['lender'],product_name=cd['product_name'],product_description=cd['product_description'])
+        if dta.is_valid():
+            fname = request.POST.get('firstname','')
+            lname = request.POST.get('lastname','')
+            email = request.POST.get('email','')
+            sub = request.POST.get('subject','')
+            msg = request.POST.get('message','')
+
+            obj = ContactModel(firstname = 'fname', lastname = 'lname', email = 'email', subject = 'sub', message = 'msg')
+            obj.save()
             return render(request, 'index.html')
     else:
         return render(request, 'contact.html', {'form':ContactForm})
