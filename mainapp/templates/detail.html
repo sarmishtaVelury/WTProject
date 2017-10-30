@@ -41,7 +41,26 @@
 </head>
 
 <body>
-   {% include 'topbar.html' %}
+ <div id="top">
+        <div class="container">
+            <div class="col-md-12" data-animate="fadeInDown">
+                <ul class="menu">
+                    <li>
+                        <a href="/logout/" onclick="signOut();">
+                        <script type="text/javascript">
+                            function signOut() {
+                                var auth2 = gapi.auth2.getAuthInstance();
+                                auth2.signOut().then(function () {
+                                console.log('User signed out.');
+                            });
+                                    }
+                        </script>
+                        <button class = "btn-lg btn-primary navbar-btn">Sign Out</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="navbar navbar-default navbar-fixed yamm" role="navigation" id="navbar">
         <div class="container">
@@ -140,7 +159,7 @@
                     <div class="row" id="productMain">
                         <div class="col-sm-6">
                             <div id="mainImage">
-                                <img src="{%static 'img/detailbig1.jpg' %}" alt="" class="img-responsive">
+                                <img src="{%static 'img/product1.jpg' %}" alt="" class="img-responsive">
                             </div>
 
                             <!-- /.ribbon -->
@@ -191,10 +210,11 @@
                             <div class="social">
                                 <h4>Show it to your friends</h4>
                                 <p>
-                                    <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                                    <a href="https://www.facebook.com/" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/login?lang=en" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                            <a href="https://plus.google.com/discover" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.google.com/gmail/" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
                                 </p>
                             </div>
                     </div>
@@ -202,7 +222,7 @@
                     <div class="row same-height-row">
                         <div class="col-md-3 col-sm-6">
                             <div class="box same-height">
-                                <h3>You may also like these products</h3>
+                                <h3>You may also like these courses.</h3>
                             </div>
                         </div>
 
@@ -226,8 +246,8 @@
                                     <img src="img/product2.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3>Fur coat</h3>
-                                    <p class="price">$143</p>
+                                    <h3>Data Science in Python</h3>
+                                    <p class="price"></p>
                                 </div>
                             </div>
                             <!-- /.product -->
@@ -253,8 +273,8 @@
                                     <img src="img/product1.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3>Fur coat</h3>
-                                    <p class="price">$143</p>
+                                    <h3>Web Development</h3>
+                                    <p class="price"></p>
                                 </div>
                             </div>
                             <!-- /.product -->
@@ -281,8 +301,8 @@
                                     <img src="img/product3.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3>Fur coat</h3>
-                                    <p class="price">$143</p>
+                                    <h3>Functional Programming in Scala</h3>
+                                    <p class="price"></p>
 
                                 </div>
                             </div>
@@ -290,7 +310,7 @@
                         </div>
 
                     </div>
-
+<!--
                     <div class="row same-height-row">
                         <div class="col-md-3 col-sm-6">
                             <div class="box same-height">
@@ -323,7 +343,7 @@
                                     <p class="price">$143</p>
                                 </div>
                             </div>
-                            <!-- /.product -->
+                            <!/.product 
                         </div>
 
                         <div class="col-md-3 col-sm-6">
@@ -350,7 +370,7 @@
                                     <p class="price">$143</p>
                                 </div>
                             </div>
-                            <!-- /.product -->
+                            
                         </div>
 
 
@@ -379,10 +399,10 @@
 
                                 </div>
                             </div>
-                            <!-- /.product -->
+                            
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- /.col-md-9 -->
