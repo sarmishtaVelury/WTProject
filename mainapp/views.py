@@ -82,7 +82,8 @@ def courseform(request):
 
 def details(request, course_id):
     course = Course.objects.get(course_id = course_id)
-    return render(request, 'detail.html', {'course':course})
+    recommendations = Course.objects.exclude(course_id = course.course_id).filter(course_description = course.course_description)[0:3]
+    return render(request, 'detail.html', {'course':course, 'recommendations':recommendations})
 
 def share(request):
     return render(request, 'test.html')
