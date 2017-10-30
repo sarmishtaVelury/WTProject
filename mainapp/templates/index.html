@@ -29,6 +29,7 @@
     <meta name="keywords" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
 
     <!-- styles -->
     <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
@@ -38,7 +39,7 @@
     <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
 
     <!-- theme stylesheet -->
-    <link href="{% static 'css/style.default.css' %}" rel="stylesheet" id="theme-stylesheet">
+    <link href="{% static 'css/style.blue.css' %}" rel="stylesheet" id="theme-stylesheet">
 
     <!-- your stylesheet with modifications -->
     <link href="{% static 'css/custom.css' %}" rel="stylesheet">
@@ -99,7 +100,7 @@
     <!-- *** NAVBAR ***
  _________________________________________________________ -->
 
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+    <div class="navbar navbar-default navbar-fixed yamm" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/index/" data-animate-hover="bounce">
@@ -126,10 +127,8 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="/index/">Home</a>
-                    </li>
-                    <li><a href="/login/">Dashboard</a>
-                    </li>
+                    <li class="active"><a href="/index/">Home</a></li>
+                    <li><a href="/login/">Dashboard</a></li>
                     <li><a href="/courselist/">Courses</a></li>
                 </ul>
 
@@ -154,14 +153,13 @@
 
             <div class="collapse clearfix" id="search">
 
-                <form class="navbar-form" role="search">
+                <form action="/search/" method="post" enctype="multipart/form-data" class="navbar-form" role="search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        {{ form.as_p }}
+                        {% csrf_token %}
                         <span class="input-group-btn">
-
-			<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-
-		    </span>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+		                </span>
                     </div>
                 </form>
 
@@ -212,7 +210,7 @@
                                 <div class="icon"><i class="fa fa-heart"></i>
                                 </div>
 
-                                <h3><a href="/">We love passionate learners!</a></h3>
+                                <h3><a href="/">A haven for passionate learners!</a></h3>
                                 <p>Anyone who wants to learn is welcome</p>
                             </div>
                         </div>
@@ -222,7 +220,7 @@
                                 <div class="icon"><i class="fa fa-tags"></i>
                                 </div>
 
-                                <h3><a href="/">Latest Courses</a></h3>
+                                <h3><a href="/">Find the Latest Courses</a></h3>
                                 <p>Courses which are recent and are relevant to Computer Science</p>
                             </div>
                         </div>
@@ -498,76 +496,10 @@
         </div>
         <!-- /#content -->
 
-        <!-- *** FOOTER ***
- _________________________________________________________ -->
-        <div id="footer" data-animate="fadeInUp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Pages</h4>
-
-                        <ul>
-                            <li><a href="text.html">About us</a>
-                            </li>
-                            <li><a href="text.html">Terms and conditions</a>
-                            </li>
-                            <li><a href="faq.html">FAQ</a>
-                            </li>
-                        </ul>
-
-                        <hr>
-
-                       
-                        <hr class="hidden-md hidden-lg hidden-sm">
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3 col-sm-6">
-
-                     <h4>User section</h4>
-
-                        <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                            </li>
-                            <li><a href="register.html">Register</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <h4>Where to find us</h4>
-
-                        <p><strong>WeAreTutors Ltd.</strong>
-                            <br>DJ Sanghvi College of Engineering
-                            <br>Vile Parle
-                            <br>Mumbai
-                            <br>400058
-                            <br>
-                            <strong></strong>
-                        </p>
-
-                        <a href="/contact/"><h3>Contact Us!</h3></a>
-
-                        <hr class="hidden-md hidden-lg">
-
-                    </div>
-                    <!-- /.col-md-3 -->
+ {%include 'footer.html' %}
 
 
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <h4>Subscribe</h4>
-
-                        <p class="text-muted">Get our latest news</p>
-
-                        <form>
-                            <div class="input-group">
-
+<<<<<<< HEAD
                                 <input type="text" class="form-control">
 
                                 <span class="input-group-btn">
@@ -622,6 +554,8 @@
             </div>
         </div>
         <!-- *** COPYRIGHT END *** -->
+=======
+>>>>>>> ffbd2239ad4ad61bd438252f976e63b72dcc4eb5
     
 
     </div>

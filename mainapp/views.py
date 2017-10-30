@@ -25,7 +25,7 @@ from django.conf import settings
 from oauth2client.contrib import xsrfutil
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.contrib.django_util.storage import DjangoORMStorage
-from WeAreTutuors.forms import CourseForm, EnrolForm, ContactForm
+from WeAreTutuors.forms import CourseForm, EnrolForm, SearchForm, ContactForm
 from mainapp.models import ContactModel
 
 try:
@@ -39,7 +39,17 @@ credentials = []
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    form = SearchForm()
+    return render(request, 'index.html', {'form':form})
+
+def search(request):
+    if(request.method == 'POST'):
+        form = CourseForm(request.POST or None)
+        if form.is_valid():
+            cd = form.cleaned_data
+            print(Course.objects.annotate(search=SearchVector('course_name', 'course_description', 'course_domain'),).filter(search=cd['search_query']))
+    return HttpResponse("hello")
+
 
 def courseform(request):
 

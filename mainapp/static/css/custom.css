@@ -1,1 +1,105 @@
 /** Your theme modifications here **/
+body{
+	background-color: #333;
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-default{
+	background-color: #555;
+	border-bottom-color: #222;
+}
+
+#top{
+	background: #333;
+}
+
+#advantages .box p {
+    position: relative;
+    color: #eee;
+    font-weight:500;
+}
+
+#advantages .box h3 {
+    color: #eee;
+    font-weight:600;
+}
+
+#advantages .box .icon {
+    color: #434343;
+    font-size: 80px;
+    margin-top: 10%;
+}
+
+#main-slider {
+    border: solid 1px #222;
+}
+
+#hot h2 {
+    color: #4993e4;
+    font-weight: bold;
+}
+
+.box{
+	background-color: #555;
+	border: solid 1px #222;
+	color: #eee;
+}
+
+.form-control {
+    color: #eee;
+    background-color: #333;
+    border-radius:  3px;
+    border-color: #222;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #000;
+}
+
+#content .product {
+    background: #555;
+    border: solid 1px #222;
+    color: #ddd;
+}
+
+#content .product .text h3 a {
+    color: #ddd;
+}
+
+.breadcrumb {
+    background-color: #555;
+    color:#fff;
+    border-radius: 0;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #fff;
+    content: "/\00a0";
+}
+
+.breadcrumb > li + li:before {
+    content: ">\00a0";
+    color: #fff;
+}
+
+#footer {
+    background: #555;
+    color:#ddd;
+}
+
+#footer ul a {
+    color: #ddd;
+}
+
+hr {
+    border-top: 1px solid #111;
+}
+
+#content .product .text h3 a {
+    color: #eee;
+}

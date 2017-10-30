@@ -28,7 +28,7 @@
     <link href="{%static 'css/owl.theme.css' %}" rel="stylesheet">
 
     <!-- theme stylesheet -->
-    <link href="{%static 'css/style.default.css' %}" rel="stylesheet" id="theme-stylesheet">
+    <link href="{% static 'css/style.blue.css' %}" rel="stylesheet" id="theme-stylesheet">
 
     <!-- your stylesheet with modifications -->
     <link href="{%static 'css/custom.css' %}" rel="stylesheet">
@@ -152,42 +152,14 @@
                     <ul class="breadcrumb">
                         <li><a href="/index/">Home</a>
                         </li>
-                        <li>Dashboard</li>
+                        <li>Courses</li>
                     </ul>
 
                     <div class="box">
-                        <h1>Your Courses</h1>
-                        <p>View and Manage your courses</p>
+                        <h1>All Courses</h1>
+                        <p>View and enroll into courses</p>
                     </div>
 
-                    <div class="box info-bar">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4 products-showing">
-                                <a href = '/courseform/'><button class = "btn btn-primary btn-lg btn-primary"><strong>Create Course</strong></button></a>
-                            </div>
-                            <div class="col-sm-12 col-md-8  products-number-sort">
-                                <div class="row">
-                                    <form class="form-inline">
-                                        <div class="col-md-6 col-sm-6"><!--
-                                            <div class="products-number">
-                                                <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products
-                                            </div> -->
-                                        </div>
-                                        <div class="col-md-6 col-sm-6"><!--
-                                            <div class="products-sort-by">
-                                                <strong>Sort by</strong>
-                                                <select name="sort-by" class="form-cohttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingnhttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingtrhttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingol">
-                                                    <option>Price</option>
-                                                    <option>Name</option>
-                                                    <option>Sales first</option>
-                                                </select>
-                                            </div> --> 
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="row products">
 
@@ -196,7 +168,7 @@
                             <div class="product">
                                 <div class="text">
                                     <h3><a href="/details/{{course.course_id}}/">{{ course.course_name }}</h3>
-                                    <p class="price" style="font-size: 20px;font-weight: bold;">{{ course.course_id }}</p>
+                                    <p class="price" style="font-size: 20px;font-weight: bold;">{{ course.course_domain }}</p>
                                     <p class="buttons">
                                         View details
                                     </p>
@@ -244,6 +216,7 @@
         <!-- /#content -->
 
 
+<<<<<<< HEAD
         <!-- *** FOOTER ***
  _________________________________________________________ -->
         <div id="footer" data-animate="fadeInUp">
@@ -368,6 +341,9 @@
             </div>
         </div>
         <!-- *** COPYRIGHT END *** -->
+=======
+ {%include 'footer.html' %}
+>>>>>>> ffbd2239ad4ad61bd438252f976e63b72dcc4eb5
 
 
 
