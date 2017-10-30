@@ -9,3 +9,6 @@ class CourseForm(forms.Form):
 class EnrolForm(forms.Form):
 	courseid = forms.CharField()
 	enrolmentcode = forms.CharField()
+
+class SearchForm(forms.Form):
+	search_query = forms.CharField(label = 'Search')

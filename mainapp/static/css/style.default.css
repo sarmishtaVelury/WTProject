@@ -19,7 +19,7 @@ h1 {
   font-size: 40px;
 }
 #top {
-  background: #555555;
+  background: #333;
   padding: 10px 0;
 }
 #top .offer {
@@ -63,7 +63,7 @@ h1 {
 #top ul.menu > li + li:before {
   content: "|\00a0";
   padding: 0 5px;
-  color: #f7f7f7;
+  color: #888;
 }
 #top ul.menu > .active {
   color: #999999;
@@ -260,7 +260,7 @@ h1 {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 .box .box-header {
-  background: #f7f7f7;
+  background: #888;
   margin: -20px -20px 20px;
   padding: 20px;
   border-bottom: solid 1px #eeeeee;
@@ -274,7 +274,7 @@ h1 {
   clear: both;
 }
 .box .box-footer {
-  background: #f7f7f7;
+  background: #888;
   margin: 30px -20px -20px;
   padding: 20px;
   border-top: solid 1px #eeeeee;
@@ -429,7 +429,7 @@ h1 {
 #content .panel.sidebar-menu ul.nav ul li a:hover,
 #content .panel.sidebar-menu ul.nav ul li a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #888;
 }
 #content .info-bar {
   line-height: 32px;

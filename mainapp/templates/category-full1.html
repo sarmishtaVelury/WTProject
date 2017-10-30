@@ -28,7 +28,7 @@
     <link href="{%static 'css/owl.theme.css' %}" rel="stylesheet">
 
     <!-- theme stylesheet -->
-    <link href="{%static 'css/style.default.css' %}" rel="stylesheet" id="theme-stylesheet">
+    <link href="{% static 'css/style.blue.css' %}" rel="stylesheet" id="theme-stylesheet">
 
     <!-- your stylesheet with modifications -->
     <link href="{%static 'css/custom.css' %}" rel="stylesheet">
@@ -152,42 +152,14 @@
                     <ul class="breadcrumb">
                         <li><a href="/index/">Home</a>
                         </li>
-                        <li>Dashboard</li>
+                        <li>Courses</li>
                     </ul>
 
                     <div class="box">
-                        <h1>Your Courses</h1>
-                        <p>View and Manage your courses</p>
+                        <h1>All Courses</h1>
+                        <p>View and enroll into courses</p>
                     </div>
 
-                    <div class="box info-bar">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4 products-showing">
-                                <a href = '/courseform/'><button class = "btn btn-primary btn-lg btn-primary"><strong>Create Course</strong></button></a>
-                            </div>
-                            <div class="col-sm-12 col-md-8  products-number-sort">
-                                <div class="row">
-                                    <form class="form-inline">
-                                        <div class="col-md-6 col-sm-6"><!--
-                                            <div class="products-number">
-                                                <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products
-                                            </div> -->
-                                        </div>
-                                        <div class="col-md-6 col-sm-6"><!--
-                                            <div class="products-sort-by">
-                                                <strong>Sort by</strong>
-                                                <select name="sort-by" class="form-cohttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingnhttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingtrhttps://docs.google.com/document/d/1-3c2slGSOmQNUQyg-ZlSgYVD6uaGqeyd8Z1TjEe9A1k/edit?usp=sharingol">
-                                                    <option>Price</option>
-                                                    <option>Name</option>
-                                                    <option>Sales first</option>
-                                                </select>
-                                            </div> --> 
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="row products">
 
@@ -196,7 +168,7 @@
                             <div class="product">
                                 <div class="text">
                                     <h3><a href="/details/{{course.course_id}}/">{{ course.course_name }}</h3>
-                                    <p class="price" style="font-size: 20px;font-weight: bold;">{{ course.course_id }}</p>
+                                    <p class="price" style="font-size: 20px;font-weight: bold;">{{ course.course_domain }}</p>
                                     <p class="buttons">
                                         View details
                                     </p>
@@ -243,160 +215,7 @@
         </div>
         <!-- /#content -->
 
-
-        <!-- *** FOOTER ***
- _________________________________________________________ -->
-        <div id="footer" data-animate="fadeInUp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Pages</h4>
-
-                        <ul>
-                            <li><a href="text.html">About us</a>
-                            </li>
-                            <li><a href="text.html">Terms and conditions</a>
-                            </li>
-                            <li><a href="faq.html">FAQ</a>
-                            </li>
-                            <li><a href="contact.html">Contact us</a>
-                            </li>
-                        </ul>
-
-                        <hr>
-
-                        <h4>User section</h4>
-
-                        <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                            </li>
-                            <li><a href="register.html">Regiter</a>
-                            </li>
-                        </ul>
-
-                        <hr class="hidden-md hidden-lg hidden-sm">
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <h4>Top categories</h4>
-
-                        <h5>Men</h5>
-
-                        <ul>
-                            <li><a href="category.html">T-shirts</a>
-                            </li>
-                            <li><a href="category.html">Shirts</a>
-                            </li>
-                            <li><a href="category.html">Accessories</a>
-                            </li>
-                        </ul>
-
-                        <h5>Ladies</h5>
-                        <ul>
-                            <li><a href="category.html">T-shirts</a>
-                            </li>
-                            <li><a href="category.html">Skirts</a>
-                            </li>
-                            <li><a href="category.html">Pants</a>
-                            </li>
-                            <li><a href="category.html">Accessories</a>
-                            </li>
-                        </ul>
-
-                        <hr class="hidden-md hidden-lg">
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <h4>Where to find us</h4>
-
-                        <p><strong>WeAreTutors Ltd.</strong>
-                            <br>DJ Sanghvi College of Engineering
-                            <br>Vile Parle
-                            <br>Mumbai
-                            <br>400058
-                            <br>
-                            <strong></strong>
-                        </p>
-
-                        <a href="contact.html">Go to contact page</a>
-
-                        <hr class="hidden-md hidden-lg">
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <h4>Subscribe</h4>
-
-                        <p class="text-muted">Get our latest news</p>
-
-                        <form>
-                            <div class="input-group">
-
-                                <input type="text" class="form-control">
-
-                                <span class="input-group-btn">
-
-                <button class="btn btn-default" type="button">Go!</button>
-
-            </span>
-
-                            </div>
-                            <!-- /input-group -->
-                        </form>
-
-                        <hr>
-
-                        <h4>Stay in touch</h4>
-
-                        <p class="social">
-                            <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
-                        </p>
-
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#footer -->
-
-        <!-- *** FOOTER END *** -->
-
-
-
-
-        <!-- *** COPYRIGHT ***
- _________________________________________________________ -->
-        <div id="copyright">
-            <div class="container">
-                <div class="col-md-6">
-                    <p class="pull-left">© 2017 WeAreTutors.</p>
-
-                </div>
-                <div class="col-md-6">
-                
-                </div>
-            </div>
-        </div>
-        <!-- *** COPYRIGHT END *** -->
+ {%include 'footer.html' %}
 
 
 

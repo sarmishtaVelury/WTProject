@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^login/$',views.login),
     url(r'^logout/$', views.logout),
     url(r'^share/$',views.share),
+    url(r'^search/$', views.search),
     url(r'^contact/$',views.contact),
     url(r'^courselist/$',views.courselist),
     url(r'^database/$', views.database_population),
