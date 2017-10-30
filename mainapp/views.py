@@ -37,6 +37,9 @@ except ImportError:
 credentials = []
 
 
+def splashscreen(request):
+    return render(request, 'introindex.html')
+
 # Create your views here.
 def index(request):
     form = SearchForm()

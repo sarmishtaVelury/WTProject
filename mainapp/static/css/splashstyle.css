@@ -1,0 +1,121 @@
+body {
+  background-color: #3e3e56;
+}
+.hide {
+  display: none;
+}
+#matrix {
+  background-color: #3e3e56;
+  -webkit-animation: blur 10s infinite;
+          animation: blur 10s infinite;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  2% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  5% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  7% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  10% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  12% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  58% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  60% {
+    -webkit-filter: url("#blur-vertical");
+            filter: url("#blur-vertical");
+  }
+  62% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  65% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  67% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  69% {
+    -webkit-filter: url("#blur-vertical");
+            filter: url("#blur-vertical");
+  }
+  72% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+}
+@keyframes blur {
+  0% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  2% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  5% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  7% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  10% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  12% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  58% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  60% {
+    -webkit-filter: url("#blur-vertical");
+            filter: url("#blur-vertical");
+  }
+  62% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  65% {
+    -webkit-filter: url("#blur-horizontal");
+            filter: url("#blur-horizontal");
+  }
+  67% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+  69% {
+    -webkit-filter: url("#blur-vertical");
+            filter: url("#blur-vertical");
+  }
+  72% {
+    -webkit-filter: url("#none");
+            filter: url("#none");
+  }
+}

@@ -20,7 +20,7 @@ from django.conf import settings
 from mainapp import views
 
 urlpatterns = [
-	url(r'^$', views.index),
+	url(r'^$', views.splashscreen),
     url(r'^index/$', views.index),
 	url(r'^courseform/$', views.courseform),
     url(r'^admin/', admin.site.urls),

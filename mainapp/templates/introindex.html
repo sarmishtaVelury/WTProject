@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Splashscreen</title>
+  
+  
+  
+      <link rel="stylesheet" href="{%static 'css/splashstyle.css' %}">
+          <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
+<style type="text/css">
+  body{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    opacity: 0.7;
+  }
+
+  #title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    z-index: 100;
+  }
+</style>
+  
+</head>
+
+<a href = '/index/'><body>
+  <canvas id='matrix'></canvas>
+<svg class='hide' xmlns="http://www.w3.org/2000/svg">
+	  <defs>
+		    <filter id='blur-horizontal'>
+			      <feGaussianBlur stdDeviation='3,0' />
+    		</filter>
+    		<filter id='blur-vertical'>
+			      <feGaussianBlur stdDeviation='0,6' />
+		    </filter>
+	  </defs>
+</svg>
+  
+    <script  src="{%static 'js/splashindex.js' %}"></script>
+
+    <div id = 'title'>
+  <p>We Are Tutors</p>
+</div>
+
+</body></a>
+</html>
