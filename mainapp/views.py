@@ -25,9 +25,8 @@ from django.conf import settings
 from oauth2client.contrib import xsrfutil
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.contrib.django_util.storage import DjangoORMStorage
-from WeAreTutuors.forms import CourseForm, EnrolForm, SearchForm
-from django.contrib.postgres.search import SearchVector
-
+from WeAreTutuors.forms import CourseForm, EnrolForm, SearchForm, ContactForm
+from mainapp.models import ContactModel
 
 try:
     import argparse
@@ -151,7 +150,20 @@ def logout(request):
     return redirect('/')
 
 def contact(request):
-    return render(request, 'contact.html')
+    if request.method == 'POST':
+        dta = ContactForm(request.POST or None)
+        if dta.is_valid():
+            fname = request.POST.get('firstname','')
+            lname = request.POST.get('lastname','')
+            email = request.POST.get('email','')
+            sub = request.POST.get('subject','')
+            msg = request.POST.get('message','')
+
+            obj = ContactModel(firstname = 'fname', lastname = 'lname', email = 'email', subject = 'sub', message = 'msg')
+            obj.save()
+            return render(request, 'index.html')
+    else:
+        return render(request, 'contact.html', {'form':ContactForm})
 
 def get_credentials():
     """Gets valid user credentials from storage.

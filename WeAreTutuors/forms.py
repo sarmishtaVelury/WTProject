@@ -12,3 +12,11 @@ class EnrolForm(forms.Form):
 
 class SearchForm(forms.Form):
 	search_query = forms.CharField(label = 'Search')
+
+class ContactForm(forms.Form):
+	firstname = forms.CharField()
+	lastname = forms.CharField()
+	email = forms.CharField()
+	subject = forms.CharField()
+	message = forms.CharField()
+
