@@ -23,7 +23,7 @@ class Course(models.Model):
     course_name = models.CharField(max_length=100)
     course_domain = models.CharField(max_length=100, default=True)
     course_id = models.IntegerField()
-    course_description = models.CharField(max_length=1000000)
+    course_description = models.CharField(max_length=1000000, default=True)
 
     def __str__(self):
         return self.course_name
