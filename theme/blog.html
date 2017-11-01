@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,28 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="{% static 'assets/ico/favicon.ico' %}">
 
     <title>SOLID - Bootstrap 3 Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css %}" rel="stylesheet">
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{% static '../../assets/js/ie8-responsive-file-warning.js' %}"></script><![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js' %} IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="{% static 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' %}"></script>
+      <script src="{% static 'https://oss.maxcdn.com/libs/respond.js' %}/1.4.2/respond.min.js' %}"></script>
     <![endif]-->
     
-    <script src="assets/js/modernizr.js"></script>
+    <script src="{% static 'assets/js/modernizr.js' %}"></script>
   </head>
 
   <body>
@@ -78,7 +79,7 @@
 	 		<! -- BLOG POSTS LIST -->
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
-		 		<p><img class="img-responsive" src="assets/img/post01.jpg"></p>
+		 		<p><img class="img-responsive" src="{% static 'assets/img/post01.jpg' %}"></p>
 		 		<a href="single-post1.html"><h3 class="ctitle">Parallel Computing</h3></a>
 		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
 		 		<p>For years software developers have been relying on hardware enhancements to mask the inefficiency of their programs. Starting from a few kHz of processing speed to MHz to now having GHz of processing power at our disposal, the performance gain provided by improvements in hardware technology has never failed to amaze us. We now expect the same to continue for years to come. But hold on a second… let us leave our world of comfort for a moment and look at it from a hardware engineer’s perspective.</p>
@@ -90,7 +91,7 @@
 		 		<div class="spacing"></div>
 		 		
 	 			<! -- Blog Post 2 -->
-		 		<p><img class="img-responsive" src="assets/img/post02.jpg"></p>
+		 		<p><img class="img-responsive" src="{% static 'assets/img/post02.jpg' %}"></p>
 		 		<a href="single-post2.html"><h3 class="ctitle">Image Stitching: A Simplistic Tutorial</h3></a>
 		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
 		 		<p>I must say, even I was enjoying while developing this tutorial . Something about image perspective and enlarged images is simply captivating to a computer vision student (LOL) . I think, image stitching is an excellent introduction to the coordinate spaces and perspectives vision. Here I am going to show how to take an ordered set of many images, (assuming they have been shot from left to right direction)</p>
@@ -100,7 +101,7 @@
 		 		<div class="spacing"></div>
 		 		
 	 			<! -- Blog Post 3 -->
-		 		<p><img class="img-responsive" src="assets/img/post03.png"></p>
+		 		<p><img class="img-responsive" src="{% static 'assets/img/post03.png' %}"></p>
 		 		<a href="single-post3.html"><h3 class="ctitle">Caffe + ConvNets : Visual Recognition Made Easy</h3></a>
 		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
 		 		<p>To classify, recognize and localize objects in an image is a hot topic in Computer Vision and throughout the years various models have been established for the same. My previous post on Bag of Visual Words Model for Image Classification and Recognition illustrates one such model. Today I write about Convolutional Neural Networks and how to implement them in Caffe. and how to train a CNN for your own dataset. We will be using the standard dataset, but you can organize any other/personal dataset in a similar fashion.</p>
@@ -136,12 +137,12 @@
 		 		<div class="hline"></div>
 					<ul class="popular-posts">
 		                <li>
-		                    <a href="#"><img src="assets/img/thumb01.jpg" alt="Popular Post"></a>
+		                    <a href="#"><img src="{% static 'assets/img/thumb01.jpg' %}" alt="Popular Post"></a>
 		                    <p>Lorem Ipsem</p>
 		                    <em>Posted on 02/21/14</em>
 		                </li>
 		                <li>
-		                    <a href="#"><img src="assets/img/thumb02.jpg" alt="Popular Post"></a>
+		                    <a href="#"><img src="{% static 'assets/img/thumb02.jpg' %}" alt="Popular Post"></a>
 		                    <p>Lorem Ipsem</p>
 		                    <em>Posted on 03/01/14</em>
 		    
@@ -205,14 +206,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/retina-1.1.0.js"></script>
-	<script src="assets/js/jquery.hoverdir.js"></script>
-	<script src="assets/js/jquery.hoverex.min.js"></script>
-	<script src="assets/js/jquery.prettyPhoto.js"></script>
-  	<script src="assets/js/jquery.isotope.min.js"></script>
-  	<script src="assets/js/custom.js"></script>
+    <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'assets/js/retina-1.1.0.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.hoverdir.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.hoverex.min.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.prettyPhoto.js' %}"></script>
+  	<script src="{% static 'assets/js/jquery.isotope.min.js' %}"></script>
+  	<script src="{% static 'assets/js/custom.js' %}"></script>
 
 
   </body>
