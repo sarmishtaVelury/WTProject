@@ -67,7 +67,7 @@ def courseform(request):
                 'descriptionHeading': cd['descriptionHeading'],
                 'description': cd['description'],
                 'room': '0',
-                'ownerId': 'me',
+                #'ownerId': 'me',
                 'courseState': 'ACTIVE'
             }
             http = credentials.authorize(httplib2.Http())
