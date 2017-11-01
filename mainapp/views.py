@@ -3,14 +3,14 @@ import httplib2
 import os
 import csv
 
-from apiclient import discovery
+from googleapiclient import discovery
 from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
 
 from django.shortcuts import render
 from django.shortcuts import redirect
-from .models import Course
+from .models import Course, usermodel
 
 import logging
 
@@ -288,3 +288,15 @@ def database_population(request):
         
     return courselist(request,credentials)
 #def create_course(credentials):
+
+def createuser(request):
+    if(request.method == 'GET'):
+        # form = UserCreateForm(request.POST or None)
+        # cd = form.cleaned_data
+        # if dta.is_valid():
+        #     email =cd['email']
+        obj = usermodel.objects.create(emailID = 'sarmishta1.velury@gmail.com')
+        objects = usermodel.objects.all()
+        return HttpResponse(objects)
+
+    return HttpResponse("not made")

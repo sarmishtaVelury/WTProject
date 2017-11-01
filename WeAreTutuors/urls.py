@@ -21,6 +21,7 @@ from mainapp import views
 
 urlpatterns = [
 	url(r'^$', views.splashscreen),
+    url(r'^create/$', views.createuser),
     url(r'^index/$', views.index),
 	url(r'^courseform/$', views.courseform),
     url(r'^admin/', admin.site.urls),
