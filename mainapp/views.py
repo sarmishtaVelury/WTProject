@@ -15,7 +15,7 @@ from .models import Course
 import logging
 
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
+from googleapiclient import errors
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseBadRequest
 from django.http import HttpResponseRedirect
@@ -97,31 +97,32 @@ def studentenroll(request,course_id):
     credentials = get_teacher_credentials()
     if(request.method == 'GET'):
 
-        # try:
-        http = credentials.authorize(httplib2.Http())
-        service = discovery.build('classroom', 'v1', http=http)
-        course = service.courses().get(id=course_id).execute()
-        print(course)
-        course_id = course['id']#provided by teacher to student in person, we will get it from forms#provided by teacher to student in person, we will get it from forms
-        student = {'userId': 'sammythesparkleberry@gmail.com'}
-            
-            # try:
-        student = service.invitations().create(body = {'courseId':course_id, 'role':'STUDENT', 'userId':'sammythesparkleberry@gmail.com'}).execute()
+        try:
+            http = credentials.authorize(httplib2.Http())
+            service = discovery.build('classroom', 'v1', http=http)
+            course = service.courses().get(id=course_id).execute()
+            course_id = course['id']#provided by teacher to student in person, we will get it from forms#provided by teacher to student in person, we will get it from forms
+            student = {'userId': 'sammythesparkleberry@gmail.com'}
+                
+            try:
+                student = service.invitations().create(body = {'courseId':course_id, 'role':'STUDENT', 'userId':'sammythesparkleberry@gmail.com'}).execute()
+            except errors.HttpError as e:
+                # error = simplejson.loads(e.content).get('error')
+                # if(error.get('code') == 409):
+                print (e)
+                # else:
+                #     raise
+            print("\n\n\n")
+            print(student)
 
-        return courselist(request,credentials)
-        #     except errors.HttpError as e:
-        #         error = simplejson.loads(e.content).get('error')
-        #         if(error.get('code') == 409):
-        #             print ('You are already a member of this course.')
-        #         else:
-        #             raise
+        except errors.HttpError as e:
+            error = simplejson.loads(e.content).get('error')
+            if(error.get('code') == 404):
+                print("course not found")
+            else:
+                raise
 
-        # except errors.HttpError as e:
-        #     error = simplejson.loads(e.content).get('error')
-        #     if(error.get('code') == 404):
-        #         print("course not found")
-        #     else:
-        #         raise
+        return login(request)
 
 def login(request):
 
@@ -156,15 +157,15 @@ def logout(request):
 def contact(request):
     if request.method == 'POST':
         dta = ContactForm(request.POST or None)
+        cd = dta.cleaned_data
         if dta.is_valid():
-            fname = request.POST.get('firstname','')
-            lname = request.POST.get('lastname','')
-            email = request.POST.get('email','')
-            sub = request.POST.get('subject','')
-            msg = request.POST.get('message','')
+            fname =cd['firstname']
+            lname = cd['lastname']
+            email =cd['email']
+            sub = cd['subject']
+            msg = cd['message']
 
-            obj = ContactModel(firstname = 'fname', lastname = 'lname', email = 'email', subject = 'sub', message = 'msg')
-            obj.save()
+            obj = ContactModel.objects.create(firstname = fname, lastname = lname, email = email, subject = sub, message = msg)
             return render(request, 'index.html')
     else:
         return render(request, 'contact.html', {'form':ContactForm})
@@ -182,7 +183,7 @@ def get_credentials():
     credential_dir = os.path.join(home_dir, '.credentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
-    credential_path = os.path.join(credential_dir, 'clientID.json')
+    credential_path = os.path.join(credential_dir, 'classroom.googleapis.com-python-quickstart.json')
 
     store = Storage(credential_path)
     credentials = store.get()
@@ -209,7 +210,7 @@ def get_teacher_credentials():
     credential_dir = os.path.join(home_dir, '.teachercredentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
-    credential_path = os.path.join(credential_dir, 'clientID.json')
+    credential_path = os.path.join(credential_dir, 'classroom.googleapis.com-python-quickstart.json')
 
     store = Storage(credential_path)
     credentials = store.get()
@@ -249,7 +250,7 @@ def database_population(request):
     credential_dir = os.path.join(home_dir, '.databasecredentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
-    credential_path = os.path.join(credential_dir, 'clientID.json')
+    credential_path = os.path.join(credential_dir, 'classroom.googleapis.com-python-quickstart.json')
 
     store = Storage(credential_path)
     credentials = store.get()

@@ -45,7 +45,21 @@ body{
 	color: #eee;
 }
 
-.form-control {
+.form-control{
+    color: #eee;
+    background-color: #333;
+    border-radius:  3px;
+    border-color: #222;
+}
+
+ .form-group #contact{
+    color: #eee;
+    background-color: #333;
+    border-radius:  3px;
+    border-color: #222;
+}
+
+#contact{
     color: #eee;
     background-color: #333;
     border-radius:  3px;
