@@ -182,7 +182,7 @@ def contact(request):
             obj = ContactModel.objects.create(firstname = fname, lastname = lname, email = email, subject = sub, message = msg)
             return render(request, 'index.html')
     else:
-        return render(request, 'contact1.html', {'form':ContactForm})
+        return render(request, 'contact.html', {'form':ContactForm})
 
 def get_credentials():
     """Gets valid user credentials from storage.
