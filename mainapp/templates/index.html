@@ -1,578 +1,433 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'assets/ico/favicon.ico' %}">
 
-<head>
-    <meta name="google-signin-client_id" content="382135397698-8jsok27v08i046c414doasff9ul9dkpi.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="382135397698-8jsok27v08i046c414doasff9ul9dkpi.apps.googleusercontent.com">
+    <title>We Are Tutors</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="{% static '../../assets/js/ie8-responsive-file-warning.js' %}"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js' %} IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' %}"></script>
+      <script src="{% static 'https://oss.maxcdn.com/libs/respond.js' %}/1.4.2/respond.min.js' %}"></script>
+    <![endif]-->
+    
+    <script src="{% static 'assets/js/modernizr.js' %}"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">WE ARE TUTORS.</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li  class="active"><a href="/index/">HOME</a></li>        
+            <li><a href="/courses/">COURSES</a></li>
+            <li><a href="/blog/">BLOG</a></li>
+            <li><a href="/about/">ABOUT</a></li>    
+            <li><a href="/contact/">CONTACT</a></li>
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 HEADERWRAP
+	 ***************************************************************************************************************** -->
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h3>Take the best courses in the world, online.</h3>
+					<h1>We Are Tutors</h1>
+					<h5>We get you details about all the MOOCs there are on the web.</h5>
+					<h5>and something else too.</h5>	
+					<br>			
+				</div>
+					<div class="col-lg-8 col-lg-offset-2 himg">
+						<img src="{% static 'assets/img/browser.jpg'' %}" class="img-responsive">
+					</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<!-- *****************************************************************************************************************
+	 SERVICE LOGOS
+	 ***************************************************************************************************************** -->
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div class="col-md-4">
+ 					<i class="fa fa-heart-o"></i>
+ 					<h4>A haven for passionate learners!</h4>
+ 					<p>Anyone who wants to learn is welcome.</p>
+ 					<!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-flask"></i>
+ 					<h4>Find the Latest Courses</h4>
+ 					<p>Courses which are recent and are relevant to Computer Science.</p>
+ 					<!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-trophy"></i>
+ 					<h4>Satisfaction guaranteed</h4>
+ 					<p>Something about there is no course which you will not find here.</p><!-- 
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
+ 				</div>		 				
+	 		</div>
+	 	</div><!--/container -->
+	 </div><!--/service -->
+	 
+	<!-- *****************************************************************************************************************
+	 PORTFOLIO SECTION
+	 ***************************************************************************************************************** -->
+	 <div id="portfoliowrap">
+        <h3>POPULAR COURSES</h3>
+
+        <div class="portfolio-centered">
+            <div class="recentitems portfolio">
+				<div class="portfolio-item graphic-design">
+					<div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_09.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">Python for everybody</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_09.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                            
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_02.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">Data Structures and Algorithms</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_02.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_03.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_03.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_04.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_04.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item books">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_05.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_05.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_06.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_06.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+                <div class="portfolio-item books">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_07.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_07.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_08.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_08.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_01.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_01.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+    
+			<div class="portfolio-item books">
+                <div class="he-wrap tpl6">
+					<img src="{% static 'assets/img/portfolio/portfolio_10.jpg' %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_10.jpg' %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+            </div><!-- portfolio -->
+        </div><!-- portfolio container -->
+	 </div><!--/Portfoliowrap -->
+	 
+	 
+	<!-- *****************************************************************************************************************
+	 MIDDLE CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-4 col-lg-offset-1">
+		 		<h4>More About Our Team.</h4>
+		 		<p>We thought that it was important to have a portal where anyone had the freedom to create courses or talk about technology irrespective of their background. You do not have to be a professor to talk about your favourite algorithm.</p>
+ 				<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
+	 		</div>
+	 		
+	 		<div class="col-lg-3">
+	 			<h4>Frequently Asked</h4>
+	 			<div class="hline"></div>
+	 			<p><a href="#">Where do I sign-up?</a></p>
+	 			<p><a href="#">How much does this cost?</a></p>
+	 			<p><a href="#">How do recommendations work?</a></p>
+	 			<p><a href="#">Nothing here interests me. Can I create my own course?</a></p>
+
+	 		</div>
+	 		
+	 		<div class="col-lg-3">
+	 			<h4>Latest Posts</h4>
+	 			<div class="hline"></div>
+	 			<p><a href="single-post.html">Parallel Computing</a></p>
+	 			<p><a href="single-post.html">Image Stitching: A Simplistic Tutorial</a></p>
+	 			<p><a href="single-post.html">Caffe + ConvNets : Visual Recognition Made Easy</a></p>
+	 		</div>
+	 		
+	 	</div><!--/row -->
+	 </div><!--/container -->
+	 
+	<!-- *****************************************************************************************************************
+	 TESTIMONIALS
+	 ***************************************************************************************************************** -->
+	 <div id="twrap">
+	 	<div class="container centered">
+	 		<div class="row">
+	 			<div class="col-lg-8 col-lg-offset-2">
+	 			<i class="fa fa-comment-o"></i>
+	 			<p>We Are Tutors makes finding online courses super simple. The user experience is pleasant too.</p>
+	 				<p>Would highly recommend!</p>
+	 			<h4><br/>John Doe</h4>
+	
+	 			</div>
+	 		</div><!--/row -->
+	 	</div><!--/container -->
+	 </div><!--/twrap -->
+	 
+	
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>We are three Computer Science sophomores studying at University of Mumbai.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Social Links</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="#"><i class="fa fa-facebook"></i></a>
+		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Location</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Mumbai<br/>
+		 				India<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'assets/js/retina-1.1.0.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.hoverdir.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.hoverex.min.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.prettyPhoto.js' %}"></script>
+  	<script src="{% static 'assets/js/jquery.isotope.min.js' %}"></script>
+  	<script src="{% static 'assets/js/custom.js' %}"></script>
+
 
     <script>
-    gapi.load('auth2',function()
-    {
-        gapi.auth.init();
-    });
-    </script>
-
-    <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Obaju e-commerce template">
-    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
-    <meta name="keywords" content="">
-    
-    <title>
-        WeAreTutors
-    </title>
-
-    <meta name="keywords" content="">
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
-
-    <!-- styles -->
-    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
-    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
-
-    <!-- theme stylesheet -->
-    <link href="{% static 'css/style.blue.css' %}" rel="stylesheet" id="theme-stylesheet">
-
-    <!-- your stylesheet with modifications -->
-    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
-
-    <script src="{% static 'js/respond.min.js' %}"></script>
-
-</head>
-
-<body>
-
-    {% include 'topbar.html' %}
-
-    <!-- *** TOPBAR ***
-
-    <div id="top">
-        <div class="container">
-            <div class="col-md-12" data-animate="fadeInDown">
-                <ul class="menu">
-                    <li><a href="/login/"><button class = "btn-lg btn-primary navbar-btn">Login</button></a></li>
-                </ul>
-            </div>
-            </div>
-            <div class="col-md-6" data-animate="fadeInDown">
-                <ul class="menu">
-                    <li><div class="g-signin2" data-onsuccess="onSignIn"></div>
-                        <script>
-                        function onSignIn(googleUser) {
-                        // Useful data for your client-side scripts:
-                        var profile = googleUser.getBasicProfile();
-                        // The ID token you need to pass to your backend:
-                        var id_token = googleUser.getAuthResponse().id_token;
-                        console.log("ID Token: " + id_token);
-
-                        var xhr = new XMLHttpRequest();
-                        xhr.open('POST', 'index/');
-                        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                        xhr.onload = function() {
-                        console.log('Signed in as: ' + xhr.responseText);
-                            };
-                        xhr.send('idtoken=' + id_token);
-                      };
-                    </script>
-                    </li>
-                    <li><a href="" onclick="signOut();">Sign Out</a></li>
-                    <script>
-                      function signOut() {
-                        var auth2 = gapi.auth2.getAuthInstance();
-                        auth2.signOut().then(function () {
-                          console.log('User signed out.');
-                        });
-                      }
-                    </script>
-                </ul>
-            </div>
-        </div>
-    </div>-->
-
-    <!-- *** NAVBAR ***
- _________________________________________________________ -->
-
-    <div class="navbar navbar-default navbar-fixed yamm" role="navigation" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="/index/" data-animate-hover="bounce">
-                    <img src="{% static 'img/logo.png' %}" alt="Obaju logo" class="hidden-xs">
-                    <img src="{% static 'img/logo-small.png' %}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
-                </a>
-                <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-align-justify"></i>
-                    </button>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
-                        <span class="sr-only">Toggle search</span>
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <!--
-                    <a class="btn btn-default navbar-toggle" href="basket.html">
-                        <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
-                    </a> -->
-                </div>
-            </div>
-            <!--/.navbar-header -->
-
-            <div class="navbar-collapse collapse" id="navigation">
-
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="/index/">Home</a></li>
-                    <li><a href="/login/">Dashboard</a></li>
-                    <li><a href="/courselist/">Courses</a></li>
-                </ul>
-
-            </div>
-            <!--/.nav-collapse -->
-
-            <div class="navbar-buttons">
-                <!--
-                <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
-                </div> -->
-                <!--/.nav-collapse -->
-
-                <div class="navbar-collapse collapse right" id="search-not-mobile">
-                    <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
-                        <span class="sr-only">Toggle search</span>
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="collapse clearfix" id="search">
-
-                <form action="/search/" method="post" enctype="multipart/form-data" class="navbar-form" role="search">
-                    <div class="input-group">
-                        {{ form.as_p }}
-                        {% csrf_token %}
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-		                </span>
-                    </div>
-                </form>
-
-            </div>
-            <!--/.nav-collapse -->
-
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /#navbar -->
-
-    <!-- *** NAVBAR END *** -->
- 
-
-
-    <div id="all">
-
-        <div id="content">
-
-            <div class="container">
-                <div class="col-md-12">
-                    <div id="main-slider">
-                        <div class="item">
-                            <img src="{% static 'img/main-slider2.jpg' %}" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="{% static 'img/main-slider3.jpg' %}" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="{% static 'img/main-slider4.jpg' %}" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="{% static 'img/main-slider1.jpg' %}" alt="">
-                        </div>
-                    </div>
-                    <!-- /#main-slider -->
-                </div>
-            </div>
-
-            <!-- *** ADVANTAGES HOMEPAGE ***
- _________________________________________________________ -->
-            <div id="advantages">
-
-                <div class="container">
-                    <div class="same-height-row">
-                        <div class="col-sm-4">
-                            <div class="box same-height clickable">
-                                <div class="icon"><i class="fa fa-heart"></i>
-                                </div>
-
-                                <h3><a href="/">A haven for passionate learners!</a></h3>
-                                <p>Anyone who wants to learn is welcome</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="box same-height clickable">
-                                <div class="icon"><i class="fa fa-tags"></i>
-                                </div>
-
-                                <h3><a href="/">Find the Latest Courses</a></h3>
-                                <p>Courses which are recent and are relevant to Computer Science</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="box same-height clickable">
-                                <div class="icon"><i class="fa fa-thumbs-up"></i>
-                                </div>
-
-                                <h3><a href="#">Satisfaction guaranteed</a></h3>
-                                <p>Take the world's best courses, online</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-
-                </div>
-                <!-- /.container -->
-
-            </div>
-            <!-- /#advantages -->
-
-            <!-- *** ADVANTAGES END *** -->
-
-            <!-- *** HOT PRODUCT SLIDESHOW ***
- _________________________________________________________ -->
-            <div id="hot">
-
-                <div class="box">
-                    <div class="container">
-                        <div class="col-md-12">
-                            <h2>Popular Courses this week !!</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="product-slider">
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="http://localhost:8000/details/9198210162/">
-                                                <img src="{% static 'img/product1.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="http://localhost:8000/details/9198210162/">
-                                                <img src="{% static 'img/product1_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="http://localhost:8000/details/9198210162/" class="invisible">
-                                    <img src="{% static 'img/product1.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="http://localhost:8000/details/9198210162/">Python for Everybody</a></h3>
-                                    
-                                </div>
-                                <!-- /.text -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="http://localhost:8000/details/9197432631/">
-                                                <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="http://localhost:8000/details/9197432631/">
-                                                <img src="{% static 'img/product2_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="http://localhost:8000/details/9197432631/" class="invisible">
-                                    <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="http://localhost:8000/details/9197432631/">Big Data for data engineers</a></h3>
-                                    
-                                </div>
-                                <!-- /.text -->
-
-                                
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="http://localhost:8000/details/9195909781/">
-                                                <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="http://localhost:8000/details/9195909781/">
-                                                <img src="{% static 'img/product3_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="http://localhost:8000/details/9195909781/" class="invisible">
-                                    <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="http://localhost:8000/details/9195909781/">Introduction to IOT</a></h3>
-                                    
-                                </div>
-                                <!-- /.text -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="http://localhost:8000/details/9197264534/">
-                                                <img src="{% static 'img/product4.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="http://localhost:8000/details/9197264534/">
-                                                <img src="{% static 'img/product4_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="http://localhost:8000/details/9197264534/" class="invisible">
-                                    <img src="{% static 'img/product3.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="http://localhost:8000/details/9197264534/">OOP and Data Structures in Java</a></h3>
-                                    
-                                </div>
-                                <!-- /.text -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="item">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="http://localhost:8000/details/9197750757/">
-                                                <img src="{% static 'img/product5.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="http://localhost:8000/details/9197750757/">
-                                                <img src="{% static 'img/product5_2.jpg' %}" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="http://localhost:8000/details/9197750757/" class="invisible">
-                                    <img src="{% static 'img/product2.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="http://localhost:8000/details/9197750757/">Development</a></h3>
-
-                                </div>
-                                <!-- /.text -->
-
-                               
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        
-            </div>
-            <!-- /#hot -->
-
-            <!-- *** HOT END *** -->
-<!--
-             *** GET INSPIRED ***
- _________________________________________________________ 
-            <div class="container" data-animate="fadeInUpBig">
-                <div class="col-md-12">
-                    <div class="box slideshow">
-                        <h3>Get Inspired</h3>
-                        <p class="lead">Get the inspiration from our world class designers</p>
-                        <div id="get-inspired" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <a href="#">
-                                    <img src="{% static 'img/getinspired1.jpg' %}" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="{% static 'img/getinspired2.jpg' %}" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="{% static 'img/getinspired3.jpg' %}" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!*** GET INSPIRED END *** -->
-
-            <!-- *** BLOG HOMEPAGE ***
- _________________________________________________________ -->
-
-            <div class="box text-center" data-animate="fadeInUp">
-                <div class="container">
-                    <div class="col-md-12">
-                        <h3 class="text-uppercase">Contribute on Github</h3>
-
-                        <p class="lead">Help Us Out! <a href="https://github.com/sarmishtaVelury/">Check our repository!</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-<!--
-            <div class="container">
-
-                <div class="col-md-12" data-animate="fadeInUp">
-
-                    <div id="blog-homepage" class="row">
-                        <div class="col-sm-6">
-                            <div class="post">
-                                <h4><a href="post.html">Fashion now</a></h4>
-                                <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
-                                </p>
-                                <hr>
-                                <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                    ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="post">
-                                <h4><a href="post.html">Who is who - example blog post</a></h4>
-                                <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
-                                </p>
-                                <hr>
-                                <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                    ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    
-                </div>
-            </div>
-            <! /.container -->
-
-            <!-- *** BLOG HOMEPAGE END *** -->
-
-
-        </div>
-        <!-- /#content -->
-
- {%include 'footer.html' %}
-
-<!--
-
-                                <input type="text" class="form-control">
-
-                                <span class="input-group-btn">
-
-			    <button class="btn btn-default" type="submit">Go!</button>
-			</span>
-
-                            </div>
-                            <! /input-group 
-                        </form>
-
-                        <hr>
-
-                        <h4>Stay in touch</h4>
-
-                        <p class="social">
-                            <a href="https://www.facebook.com/" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com/login?lang=en" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
-                            <a href="https://plus.google.com/discover" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
-                            <a href="https://www.google.com/gmail/" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
-                        </p>
-
-
-                    </div>
-                    <!/.col-md-3 
-
-                </div>
-                <! /.row 
-
-            </div>
-            <! /.container 
-        </div>
-        <!/#footer 
-
-        <! *** FOOTER END *** -->
-
-
-
-
-        <!-- *** COPYRIGHT ***
- _________________________________________________________ 
-        <div id="copyright">
-            <div class="container">
-                <div class="col-md-6">
-                    <p class="pull-left">© 2017 WeAreTutors.</p>
-
-                </div>
-                <div class="col-md-6">
-                
-                </div>
-            </div>
-        </div>
-        <!*** COPYRIGHT END *** -->
-
-    
-
-    </div>
-    <!-- /#all -->
-    
-
-    <!-- *** SCRIPTS TO INCLUDE ***
- _________________________________________________________ -->
-    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery.cookie.js' %}"></script>
-    <script src="{% static 'js/waypoints.min.js' %}"></script>
-    <script src="{% static 'js/modernizr.js' %}"></script>
-    <script src="{% static 'js/bootstrap-hover-dropdown.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/front.js' %}"></script>
-
-
-</body>
-
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+  </body>
 </html>

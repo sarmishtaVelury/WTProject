@@ -23,6 +23,10 @@ urlpatterns = [
 	url(r'^$', views.splashscreen),
     url(r'^create/$', views.createuser),
     url(r'^index/$', views.index),
+    url(r'^blog/$', views.blog),
+    url(r'^blogpost1/$', views.blogpage1),
+    url(r'^blogpost2/$', views.blogpage2),
+    url(r'^blogpost3/$', views.blogpage3),
 	url(r'^courseform/$', views.courseform),
     url(r'^admin/', admin.site.urls),
     url(r'^login/$',views.login),
@@ -30,8 +34,9 @@ urlpatterns = [
     url(r'^share/$',views.share),
     url(r'^search/$', views.search),
     url(r'^contact/$',views.contact),
-    url(r'^courselist/$',views.courselist),
+    url(r'^course/$',views.courselist),
     url(r'^database/$', views.database_population),
+    url(r'^makedatabase/$', views.makedatabase),
     url(r'^enroll/(?P<course_id>[\w{}.-]{1,40})/$', views.studentenroll, name = 'enroll'),
     url(r'^details/(?P<course_id>[0-9]+)/$', views.details, name='details')
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

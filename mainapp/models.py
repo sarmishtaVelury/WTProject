@@ -20,11 +20,11 @@ class ContactModel(models.Model):
 	message = models.CharField(max_length=1000)
 
 class Course(models.Model):
-    course_id = models.IntegerField()
+    course_id = models.AutoField(primary_key = True)
     course_name = models.CharField(max_length=100)
     course_domain = models.CharField(max_length=100, default='software-development')
     course_description = models.CharField(max_length=1000000, default='This a course on how to develop software well.')
-
+    course_website = models.CharField(max_length = 100, default = 'Coursera')
     def __str__(self):
         return self.course_name
 

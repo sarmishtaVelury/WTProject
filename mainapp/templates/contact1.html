@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{%static 'assets/ico/favicon.ico' %}">
+
+    <title>SOLID - Bootstrap 3 Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{%static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{%static 'assets/css/style.css' %}" rel="stylesheet">
+    <link href="{%static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    
+    <script src="{% static 'assets/js/modernizr.js' %}"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">WE ARE TUTORS.</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">HOME</a></li>        
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>    
+            <li><a href="contact.html">CONTACT</a></li>
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Contact.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 CONTACT WRAP
+	 ***************************************************************************************************************** -->
+
+	 <div id="contactwrap"></div>
+	 
+	<!-- *****************************************************************************************************************
+	 CONTACT FORMS
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-8">
+	 			<h4>Just Get In Touch!</h4>
+	 			<div class="hline"></div>
+		 			<p>We would like to hear from you!</p>
+		 			<form role="form">
+					  <div class="form-group">
+					    <label for="InputName1">Your Name</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1">
+					  </div>
+					  <div class="form-group">
+					    <label for="InputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1">
+					  </div>
+					  <div class="form-group">
+					    <label for="InputSubject1">Subject</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1">
+					  </div>
+					  <div class="form-group">
+					  	<label for="message1">Message</label>
+					  	<textarea class="form-control" id="message1" rows="3"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-theme">Submit</button>
+					</form>
+			</div><! --/col-lg-8 -->
+	 		
+	 		<div class="col-lg-4">
+		 		<h4>Our Address</h4>
+		 		<div class="hline"></div>
+		 			<p>
+		 				D. J. Sanghvi College of Engineering<br/>
+		 				Vile Parle, Mumbai,<br/>
+		 				India<br/>
+		 			</p>
+		 			<p>
+		 				Email: wearetutors01@gmail.com<br/>
+		 				Tel: +918879482458
+		 			</p>
+		 			
+	 		</div>
+	 	</div><! --/row -->
+	 </div><! --/container -->
+
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>We are three Computer Science sophomores studying at University of Mumbai.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Social Links</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="#"><i class="fa fa-facebook"></i></a>
+		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Location</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Mumbai<br/>
+		 				India<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'assets/js/retina-1.1.0.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.hoverdir.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.hoverex.min.js' %}"></script>
+	<script src="{% static 'assets/js/jquery.prettyPhoto.js' %}"></script>
+  	<script src="{% static 'assets/js/jquery.isotope.min.js' %}"></script>
+  	<script src="{% static 'assets/js/custom.js' %}"></script>
+
+
+  </body>
+</html>

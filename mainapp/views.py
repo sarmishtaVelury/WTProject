@@ -36,6 +36,17 @@ except ImportError:
 
 credentials = []
 
+def blog(request):
+    return render(request, 'blog.html')
+
+def blogpage1(request):
+    return render(request, 'single-post1.html')
+
+def blogpage2(request):
+    return render(request, 'single-post2.html')
+
+def blogpage3(request):
+    return render(request, 'single-post3.html')
 
 def splashscreen(request):
     return render(request, 'introindex.html')
@@ -82,8 +93,8 @@ def courseform(request):
 
 def details(request, course_id):
     course = Course.objects.get(course_id = course_id)
-    recommendations = Course.objects.exclude(course_id = course.course_id).filter(course_description = course.course_description)[0:3]
-    return render(request, 'detail.html', {'course':course, 'recommendations':recommendations})
+    recommendations = Course.objects.exclude(course_id = course.course_id).filter(course_domain = course.course_domain)[0:5]
+    return render(request, 'single-project.html', {'course':course, 'recommendations':recommendations})
 
 def share(request):
     return render(request, 'test.html')
@@ -91,7 +102,7 @@ def share(request):
 def courselist(request):
     courselist = Course.objects.all()
     print(len(courselist))
-    return render(request, 'category-full1.html',{'courselist':courselist})
+    return render(request, 'courses.html',{'courselist':courselist})
 
 def studentenroll(request,course_id):
     credentials = get_teacher_credentials()
@@ -168,7 +179,7 @@ def contact(request):
             obj = ContactModel.objects.create(firstname = fname, lastname = lname, email = email, subject = sub, message = msg)
             return render(request, 'index.html')
     else:
-        return render(request, 'contact.html', {'form':ContactForm})
+        return render(request, 'contact1.html', {'form':ContactForm})
 
 def get_credentials():
     """Gets valid user credentials from storage.
@@ -300,3 +311,15 @@ def createuser(request):
         return HttpResponse(objects)
 
     return HttpResponse("not made")
+
+
+def makedatabase(request):
+    with open('scraping/courseCatalog.csv') as csvfile:
+        csvreader = csv.reader(csvfile)
+        for row in csvreader:
+            course_domain = row[1]
+            course_name = row[2]
+            course_description = row[3]
+            course_website = "Coursera"
+            Course.objects.create(course_website = course_website, course_name = course_name, course_description = course_description, course_domain = course_domain)
+    return HttpResponse(Course.objects.all())
