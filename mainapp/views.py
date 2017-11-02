@@ -39,6 +39,9 @@ credentials = []
 def blog(request):
     return render(request, 'blog.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def blogpage1(request):
     return render(request, 'single-post1.html')
 
@@ -154,7 +157,7 @@ def login(request):
         courselist.append(course)
 
     print(len(courselist))
-    return render(request, 'category-full.html',{'courselist':courselist})
+    return render(request, 'courses.html',{'courselist':courselist})
 
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/classroom.googleapis.com-python-quickstart.json
